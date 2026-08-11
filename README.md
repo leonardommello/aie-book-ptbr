@@ -1,132 +1,132 @@
-# AI Engineering book and other resources
-> _This repo will be updated with more resources in the next few weeks._
+# Livro AI Engineering e outros recursos
+> _Este repositório será atualizado com mais recursos nas próximas semanas._
 
-- [About the book AI Engineering](#about-the-book)
-    - [Table of contents](ToC.md)
-    - [Chapter summaries](chapter-summaries.md)
-    - [Study notes](study-notes.md)
-- [AI engineering resources](resources.md)
-- [Prompt examples](prompt-examples.md)
-- [Case studies](case-studies.md)
-- [Misalignment AI](misalignment.md)
-- [Appendix](appendix.md)
-- Fun tools:
+- [Sobre o livro AI Engineering](#sobre-o-livro)
+    - [Sumário](ToC.md)
+    - [Resumos dos capítulos](chapter-summaries.md)
+    - [Notas de estudo](study-notes.md)
+- [Recursos de engenharia de IA](resources.md)
+- [Exemplos de prompt](prompt-examples.md)
+- [Estudos de caso](case-studies.md)
+- [Desalinhamento em IA](misalignment.md)
+- [Apêndice](appendix.md)
+- Ferramentas divertidas:
     
-    - [ChatGPT and Claude conversation heatmap generator](scripts/ai-heatmap.ipynb)
-- And more ...
+    - [Gerador de mapa de calor de conversas do ChatGPT e do Claude](scripts/ai-heatmap.ipynb)
+- E mais...
 
-## About the book
-The availability of foundation models has transformed AI from a specialized discipline into a powerful development tool everyone can use. This book covers the end-to-end process of adapting foundation models to solve real-world problems, encompassing tried-and-true techniques from other engineering fields and techniques emerging with foundation models.
+## Sobre o livro
+A disponibilidade de modelos de fundação transformou a IA de disciplina especializada em uma poderosa ferramenta de desenvolvimento que qualquer pessoa pode usar. Este livro cobre o processo de ponta a ponta de adaptar modelos de fundação para resolver problemas do mundo real, reunindo técnicas já consagradas em outras áreas da engenharia e técnicas que surgem com os modelos de fundação.
 
 [<img src="assets/aie-cover.png" width="250">](https://amzn.to/49j1cGS)[<img src="assets/aie-cover-back.png" width="250">](https://amzn.to/49j1cGS)
 
-The book is available on:
+O livro está disponível em:
 - [Amazon](https://amzn.to/49j1cGS)
 - [O'Reilly](https://oreillymedia.pxf.io/c/5719111/2146021/15173)
 - [Kindle](https://amzn.to/3Vq2ryu)
 - [Audible](https://www.audible.com/pd/AI-Engineering-Audiobook/B0DWJ1SP94?qid=1781010240)
 
-and most places where technical books are sold.
+e na maioria dos lugares onde se vendem livros técnicos.
 
-It's been [translated](translations.md) into: [Japanese](https://www.oreilly.co.jp/books/9784814401383/), [Korean](https://www.hanbit.co.kr/store/books/look.php?p_code=B3535685426), [Chinese Traditional](https://www.gotop.com.tw/books/bookdetails.aspx?types=a&bn=A806), [Chinese Simplified](https://product.dangdang.com/30013700.html), [Vietnamese](https://shop.timescorporation.vn/sach-ky-thuat-ai-xay-dung-ung-dung-voi-mo-hinh-nen-tac-gia-chip-huyen), [Spanish](https://bit.ly/4piliIn), [Italian](https://www.amazon.it/-/en/Ingegneria-Dellia-Italian-Applicazioni-Fondazione/dp/B0GM5V47D7/), [French](https://www.lisez.com/livres/ingenierie-de-lia/9782412104415), [Portuguese](https://novatec.com.br/livros/engenharia-de-ia/), [German](https://dpunkt.de/produkt/generative-ki-systeme-entwickeln/), [Thai](https://www.naiin.com/product/detail/694038), [Russian](https://www.flip.kz/catalog?prod=5764935), and [Polish](https://helion.pl/ksiazki/inzynieria-ai-tworzenie-aplikacji-z-wykorzystaniem-modeli-bazowych-chip-huyen,inaitw.htm#format/d).
+Ele foi [traduzido](translations.md) para: [japonês](https://www.oreilly.co.jp/books/9784814401383/), [coreano](https://www.hanbit.co.kr/store/books/look.php?p_code=B3535685426), [chinês tradicional](https://www.gotop.com.tw/books/bookdetails.aspx?types=a&bn=A806), [chinês simplificado](https://product.dangdang.com/30013700.html), [vietnamita](https://shop.timescorporation.vn/sach-ky-thuat-ai-xay-dung-ung-dung-voi-mo-hinh-nen-tac-gia-chip-huyen), [espanhol](https://bit.ly/4piliIn), [italiano](https://www.amazon.it/-/en/Ingegneria-Dellia-Italian-Applicazioni-Fondazione/dp/B0GM5V47D7/), [francês](https://www.lisez.com/livres/ingenierie-de-lia/9782412104415), [português](https://novatec.com.br/livros/engenharia-de-ia/), [alemão](https://dpunkt.de/produkt/generative-ki-systeme-entwickeln/), [tailandês](https://www.naiin.com/product/detail/694038), [russo](https://www.flip.kz/catalog?prod=5764935) e [polonês](https://helion.pl/ksiazki/inzynieria-ai-tworzenie-aplikacji-z-wykorzystaniem-modeli-bazowych-chip-huyen,inaitw.htm#format/d).
 
-It'll soon be available in Greek, Ukrainian, and Uzbek.
-
-
-_This is NOT a tutorial book, so it doesn't have a lot of code snippets._
-
-## What this book is about
-This book provides a framework for adapting foundation models, which include both large language models (LLMs) and large multimodal models (LMMs), to specific applications. It not only outlines various solutions for building an AI application but also raises questions you can ask to evaluate the best solution for your needs. Here are just some of the many questions that this book can help you answer:
-
-1. Should I build this AI application?
-1. How do I evaluate my application? Can I use AI to evaluate AI outputs?
-1. What causes hallucinations? How do I detect and mitigate hallucinations?
-1. What are the best practices for prompt engineering?
-1. Why does RAG work? What are the strategies for doing RAG?
-1. What’s an agent? How do I build and evaluate an agent?
-1. When to finetune a model? When not to finetune a model?
-1. How much data do I need? How do I validate the quality of my data?
-1. How do I make my model faster, cheaper, and secure?
-1. How do I create a feedback loop to improve my application continually?
-
-The book will also help you navigate the overwhelming AI landscape: types of models, evaluation benchmarks, and a seemingly infinite number of use cases and application patterns.
-
-The content in this book is illustrated using actual case studies, many of which I’ve worked on, backed by ample references and extensively reviewed by experts from a wide range of backgrounds. Even though the book took two years to write, it draws from my experience working with language models and ML systems from the last decade.
-
-Like my previous book, _[Designing Machine Learning Systems (DMLS)](https://amzn.to/4fXVZH2)_, this book focuses on the fundamentals of AI engineering instead of any specific tool or API. Tools become outdated quickly, but fundamentals should last longer.
-
-### Reading _AI Engineering_ (AIE) with _Designing Machine Learning Systems_ (DMLS)
-AIE can be a companion to DMLS. DMLS focuses on building applications on top of traditional ML models, which involves more tabular data annotations, feature engineering, and model training. AIE focuses on building applications on top of foundation models, which involves more prompt engineering, context construction, and parameter-efficient finetuning. Both books are self-contained and modular, so you can read either book independently.
-
-Since foundation models are ML models, some concepts are relevant to working with both. If a topic is relevant to AIE but has been discussed extensively in DMLS, it’ll still be covered in this book, but to a lesser extent, with pointers to relevant resources. 
-
-Note that many topics are covered in DMLS but not in AIE, and vice versa. The first chapter of this book also covers the differences between traditional ML engineering and AI engineering.
-
-A real-world system often involves both traditional ML models and foundation models, so knowledge about working with both is often necessary.
-
-## Who this book is for
-
-This book is for anyone who wants to leverage foundation models to solve real-world problems. This is a technical book, so the language of this book is geared towards technical roles, including AI engineers, ML engineers, data scientists, engineering managers, and technical product managers. This book is for you if you can relate to one of the following scenarios:
-* You’re building or optimizing an AI application, whether you’re starting from scratch or looking to move beyond the demo phase into a production-ready stage. You may also be facing issues like hallucinations, security, latency, or costs, and need targeted solutions.
-* You want to streamline your team’s AI development process, making it more systematic, faster, and reliable.
-* You want to understand how your organization can leverage foundation models to improve the business’s bottom line and how to build a team to do so.
-
-You can also benefit from the book if you belong to one of the following groups:
-* Tool developers who want to identify underserved areas in AI engineering to position your products in the ecosystem.
-* Researchers who want to understand better AI use cases.
-* Job candidates seeking clarity on the skills needed to pursue a career as an AI engineer.
-* Anyone wanting to better understand AI's capabilities and limitations, and how it might affect different roles.
-
-I love getting to the bottom of things, so some sections dive a bit deeper into the technical side. While many early readers like the detail, I know it might not be for everyone. I’ll give you a heads-up before things get too technical. Feel free to skip ahead if it feels a little too in the weeds!
+Em breve estará disponível em grego, ucraniano e uzbeque.
 
 
-## Reviews
-- _"This book offers a comprehensive, well-structured guide to the essential aspects of building generative AI systems. A must-read for any professional looking to scale AI across the enterprise."_ - Vittorio Cretella, former global CIO at P&G and Mars
+_Este NÃO é um livro tutorial, portanto não traz muitos trechos de código._
 
-- _"Chip Huyen gets generative AI. She is a remarkable teacher and writer whose work has been instrumental in helping teams bring AI into production. Drawing on her deep expertise, AI Engineering is a comprehensive and holistic guide to building generative AI applications in production."_ - Luke Metz, co-creator of ChatGPT, ex-research manager @ OpenAI
+## Sobre o que é este livro
+Este livro oferece um arcabouço para adaptar modelos de fundação — que incluem tanto modelos de linguagem de grande porte (LLMs) quanto modelos multimodais de grande porte (LMMs) — a aplicações específicas. Ele não apenas descreve várias soluções para construir uma aplicação de IA, como também levanta perguntas que você pode fazer para avaliar a melhor solução para as suas necessidades. Estas são apenas algumas das muitas perguntas que o livro ajuda a responder:
 
-- _"Every AI engineer building real-world applications should read this book. It’s a vital guide to end-to-end AI system design, from model development and evaluation to large-scale deployment and operation."_ - Andrei Lopatenko, Director Search and AI, Neuron7
+1. Devo construir esta aplicação de IA?
+1. Como avalio minha aplicação? Posso usar IA para avaliar saídas de IA?
+1. O que causa alucinações? Como detectá-las e mitigá-las?
+1. Quais são as boas práticas de engenharia de prompt?
+1. Por que RAG funciona? Quais são as estratégias para fazer RAG?
+1. O que é um agente? Como construir e avaliar um agente?
+1. Quando fazer ajuste fino de um modelo? Quando não fazer?
+1. De quantos dados preciso? Como valido a qualidade dos meus dados?
+1. Como deixo meu modelo mais rápido, mais barato e mais seguro?
+1. Como crio um ciclo de retroalimentação para melhorar minha aplicação continuamente?
 
-- _"This book serves as an essential guide for building AI products that can scale. Unlike other books that focus on tools or current trends that are constantly changing, Chip delivers timeless foundational knowledge. Whether you're a product manager or an engineer, this book effectively bridges the collaboration gap between cross-functional teams, making it a must-read for anyone involved in AI development."_ - Aileen Bui, AI Product Operations Manager, Google
+O livro também ajuda você a navegar pelo cenário avassalador da IA: tipos de modelos, benchmarks de avaliação e um número aparentemente infinito de casos de uso e padrões de aplicação.
 
-- _"This is the definitive segue into AI Engineering from one of the greats of ML Engineering! Chip has seen through successful projects and careers at every stage of a company and for the first time ever condensed her expertise for new AI Engineers entering the field."_ - swyx, Curator, AI.Engineer
+O conteúdo deste livro é ilustrado com estudos de caso reais, em muitos dos quais trabalhei diretamente, apoiados por amplas referências e revisados a fundo por especialistas das mais variadas formações. Embora o livro tenha levado dois anos para ser escrito, ele se apoia na minha experiência com modelos de linguagem e sistemas de ML da última década.
 
-- _"AI Engineering is a practical guide that provides the most up-to-date information on AI development, making it approachable for novice and expert leaders alike. This book is an essential resource for anyone looking to build robust and scalable AI systems."_ - Vicki Reyzelman, Chief AI Solutions Architect, Mave Sparks
+Assim como meu livro anterior, _[Designing Machine Learning Systems (DMLS)](https://amzn.to/4fXVZH2)_, este foca nos fundamentos da engenharia de IA, e não em uma ferramenta ou API específica. Ferramentas ficam obsoletas rápido; fundamentos duram mais.
 
-- _"AI Engineering is a comprehensive guide that serves as an essential reference for both understanding and implementing AI systems in practice."_ - Han Lee, Director - Data Science, Moody's.
+### Como ler _AI Engineering_ (AIE) junto com _Designing Machine Learning Systems_ (DMLS)
+AIE pode ser um complemento de DMLS. DMLS trata da construção de aplicações sobre modelos de ML tradicionais, o que envolve mais anotação de dados tabulares, engenharia de atributos e treinamento de modelos. AIE trata da construção de aplicações sobre modelos de fundação, o que envolve mais engenharia de prompt, construção de contexto e ajuste fino com eficiência de parâmetros. Os dois livros são autocontidos e modulares, então você pode ler qualquer um deles de forma independente.
 
-- _"AI Engineering is an essential guide for anyone building software with Generative AI! It demystifies the technology, highlights the importance of evaluation, and shares what should be done to achieve quality before starting with costly fine-tuning."_ - Rafal Kawala, Senior AI Engineering Director, 16 years of experience working in a Fortune 500 company
+Como modelos de fundação são modelos de ML, alguns conceitos valem para os dois. Se um tema é relevante para AIE mas já foi discutido em profundidade em DMLS, ele ainda aparece neste livro, porém em menor extensão, com indicações de recursos relevantes.
 
-See what people are talking about the book on Twitter [@aisysbooks](https://twitter.com/aisysbooks/likes)!
+Muitos temas são cobertos em DMLS e não em AIE, e vice-versa. O primeiro capítulo deste livro também trata das diferenças entre a engenharia de ML tradicional e a engenharia de IA.
 
-## Acknowledgments
-This book would've taken a lot longer to write and missed many important topics if it wasn't for so many wonderful people who helped me through the process.
+Um sistema do mundo real costuma envolver tanto modelos de ML tradicionais quanto modelos de fundação, então conhecer os dois é quase sempre necessário.
 
-Because the timeline for the project was tight—two years for a 150,000-word book that covers so much ground—I'm grateful to the technical reviewers who put aside their precious time to review this book so quickly.
+## Para quem é este livro
 
-[Luke Metz](https://x.com/luke_metz) is an amazing soundboard who checked my assumptions and prevented me from going down the wrong path. [Han-chung Lee](https://www.linkedin.com/in/hanchunglee/), always up to date with the latest AI news and community development, pointed me toward resources that I missed. Luke and Han were the first to review my drafts before I sent them to the next round of technical reviewers, and I'm forever indebted to them for tolerating my follies and mistakes.
+Este livro é para quem quer aproveitar modelos de fundação para resolver problemas do mundo real. É um livro técnico, então a linguagem é voltada a papéis técnicos: engenheiros de IA, engenheiros de ML, cientistas de dados, gerentes de engenharia e gerentes de produto técnicos. Ele é para você se algum dos cenários a seguir soa familiar:
+* Você está construindo ou otimizando uma aplicação de IA, seja do zero, seja para tirá-la da fase de demonstração e levá-la a produção. Talvez você também enfrente problemas como alucinações, segurança, latência ou custos e precise de soluções direcionadas.
+* Você quer simplificar o processo de desenvolvimento de IA do seu time, tornando-o mais sistemático, rápido e confiável.
+* Você quer entender como a sua organização pode aproveitar modelos de fundação para melhorar os resultados do negócio e como montar um time para isso.
 
-Having led AI innovation at Fortune 500 companies, [Vittorio Cretella](https://www.linkedin.com/in/vittorio-cretella/) and [Andrei Lopatenko](https://www.linkedin.com/in/lopatenko/) provided invaluable feedback that combined deep technical expertise with executive insights. [Vicki Reyzelman](https://www.linkedin.com/in/vickireyzelman/) helped me ground my content and keep it relevant for readers with a software engineering background.
+Você também pode se beneficiar do livro se pertence a um dos grupos a seguir:
+* Quem desenvolve ferramentas e quer identificar áreas mal atendidas da engenharia de IA para posicionar seus produtos no ecossistema.
+* Quem pesquisa e quer entender melhor os casos de uso de IA.
+* Quem se candidata a vagas e busca clareza sobre as habilidades necessárias para seguir carreira como engenheiro de IA.
+* Qualquer pessoa que queira entender melhor as capacidades e as limitações da IA e como ela pode afetar diferentes funções.
 
-[Eugene Yan](https://eugeneyan.com/), a dear friend and amazing applied scientist, provided me with technical and emotional support. Shawn Wang ([swyx](https://x.com/swyx)), provided an important vibe check that helped me feel more confident about the book. [Sanyam Bhutani](https://x.com/bhutanisanyam1) is one of the best learners and most humble souls I know, who not only gave thoughtful written feedback but also recorded videos to explain his feedback.
+Gosto de ir ao fundo das coisas, então algumas seções se aprofundam mais no lado técnico. Muitos leitores iniciais gostaram do detalhamento, mas sei que ele pode não ser para todo mundo. Vou avisar antes de as coisas ficarem técnicas demais. Sinta-se à vontade para pular adiante se achar que está minucioso demais!
 
-Kyle Krannen is a star deep learning lead who interviewed his colleagues and shared with me an amazing writeup about their finetuning process, which guided the finetuning chapter. [Mark Saroufim](https://x.com/marksaroufim), an inquisitive mind who always has his pulse on the most interesting problems, introduced me to great resources on efficiency. Both Kyle and Mark's feedback was critical in writing Chapters 7 and 9.
 
-[Kittipat "Bot" Kampa](https://www.linkedin.com/in/kittipat-bot-kampa-1b1965/), on top of answering my many questions, shared with me a detailed visualization of how he thinks about AI platform. I appreciate [Denys Linkov](https://www.linkedin.com/in/denyslinkov/)'s systematic approach to evaluation and platform development. [Chetan Tekur](https://www.linkedin.com/in/chetantekur/) gave great examples that helped me structure AI application patterns. I'd also like to thank [Alex (Shengzhi Li) Li](https://www.linkedin.com/in/findalexli/) and [Hien Luu](https://www.linkedin.com/in/hienluu/) for their thoughtful feedback on my draft on AI architecture.
+## Resenhas
+- _"Este livro oferece um guia abrangente e bem estruturado sobre os aspectos essenciais da construção de sistemas de IA generativa. Leitura obrigatória para qualquer profissional que queira escalar a IA por toda a empresa."_ - Vittorio Cretella, former global CIO at P&G and Mars
 
-[Aileen Bui](https://www.linkedin.com/in/aileenbui/) is a treasure who shared unique feedback and examples from a product manager's perspective. Thanks [Todor Markov](https://www.linkedin.com/in/todor-markov-4aa38a67/) for the actionable advice on the RAG and Agents chapter. Thanks [Tal Kachman](https://www.linkedin.com/in/tal-kachman/) for jumping in at the last minute to push the finetuning chapter over the finish line. 
+- _"Chip Huyen entende de IA generativa. Ela é uma professora e escritora notável, cujo trabalho foi decisivo para ajudar times a levar IA para produção. Apoiado nessa profunda experiência, AI Engineering é um guia abrangente e holístico para construir aplicações de IA generativa em produção."_ - Luke Metz, co-creator of ChatGPT, ex-research manager @ OpenAI
 
-There are so many wonderful people whose company and conversations gave me ideas that guide the content of this book. I tried my best to include the names of everyone who has helped me here, but due to the inherent faultiness of human memory, I undoubtedly neglected to mention many. If I forgot to include your name, please know that it wasn't because I don't appreciate your contribution, and please kindly remind me so that I can rectify as soon as possible!
+- _"Todo engenheiro de IA que constrói aplicações reais deveria ler este livro. É um guia essencial para o projeto de sistemas de IA de ponta a ponta, do desenvolvimento e da avaliação de modelos até a implantação e a operação em larga escala."_ - Andrei Lopatenko, Director Search and AI, Neuron7
 
-Andrew Francis, Anish Nag, [Anthony Galczak](https://www.linkedin.com/in/wgalczak/), [Anton Bacaj](https://x.com/abacaj), Balázs Galambosi, Charles Frye, Charles Packer, Chris Brousseau, Eric Hartford, Goku Mohandas, Hamel Husain, Harpreet Sahota, Hassan El Mghari, Huu Nguyen, Jeremy Howard, Jesse Silver, John Cook, [Juan Pablo Bottaro](https://www.linkedin.com/in/juan-pablo-bottaro/), Kyle Gallatin, Lance Martin, Lucio Dery, Matt Ross, Maxime Labonne, Miles Brundage, Nathan Lambert, Omar Khattab, [Phong Nguyen](https://www.linkedin.com/in/xphongvn/), Purnendu Mukherjee, Sam Reiswig, Sebastian Raschka, Shahul ES, Sharif Shameem, Soumith Chintala, Teknium, Tim Dettmers, Undi5, Val Andrei Fajardo, Vern Liang, Victor Sanh, Wing Lian, Xiquan Cui, Ying Sheng, and Kristofer.
+- _"Este livro serve como guia essencial para construir produtos de IA que escalam. Ao contrário de outros livros, focados em ferramentas ou em tendências do momento que mudam o tempo todo, Chip entrega conhecimento fundamental e atemporal. Seja você gerente de produto ou engenheiro, o livro fecha com eficácia a lacuna de colaboração entre times multifuncionais, o que o torna leitura obrigatória para qualquer pessoa envolvida com desenvolvimento de IA."_ - Aileen Bui, AI Product Operations Manager, Google
 
-I'd like to thank all early readers who have also reached out with feedback. Douglas Bailley is a super reader who shared so much thoughtful feedback. Nutan Sahoo for suggesting an elegant way to explain perplexity.
+- _"Esta é a transição definitiva para a engenharia de IA, escrita por uma das grandes referências da engenharia de ML! Chip acompanhou projetos e carreiras bem-sucedidos em todos os estágios de uma empresa e, pela primeira vez, condensou sua experiência para quem está entrando agora na área."_ - swyx, Curator, AI.Engineer
 
-I learned so much from the online discussions with so many. Thanks to everyone who's ever answered my questions, commented on my posts, or sent me an email with your thoughts.
+- _"AI Engineering é um guia prático que traz as informações mais atuais sobre desenvolvimento de IA, acessível tanto para lideranças iniciantes quanto para as experientes. Este livro é um recurso essencial para quem quer construir sistemas de IA robustos e escaláveis."_ - Vicki Reyzelman, Chief AI Solutions Architect, Mave Sparks
 
-Of course, the book wouldn't have been possible without the team at O'Reilly, especially my development editors (Melissa Potter, Corbin Collins, Jill Leonard) and my production editors (Kristen Brown and Elizabeth Kelly). Liz Wheeler is the most discerning editor I've ever worked with. Nicole Butterfield is a force who oversaw this book from an idea to a final product.
+- _"AI Engineering é um guia abrangente que funciona como referência essencial tanto para entender quanto para implementar sistemas de IA na prática."_ - Han Lee, Director - Data Science, Moody's.
 
-This book, after all, is an accumulation of invaluable lessons I learned throughout my career. I owe these lessons to my extremely competent and patient coworkers and former coworkers. Every person I've worked with has taught me something new about bringing ML into the world.
+- _"AI Engineering é um guia essencial para qualquer pessoa que construa software com IA generativa! Ele desmistifica a tecnologia, destaca a importância da avaliação e mostra o que fazer para alcançar qualidade antes de partir para um ajuste fino caro."_ - Rafal Kawala, Senior AI Engineering Director, 16 years of experience working in a Fortune 500 company
+
+Veja o que estão dizendo sobre o livro no Twitter [@aisysbooks](https://twitter.com/aisysbooks/likes)!
+
+## Agradecimentos
+Este livro teria levado muito mais tempo para ser escrito e teria deixado de fora muitos temas importantes se não fosse por tantas pessoas maravilhosas que me ajudaram no processo.
+
+Como o cronograma do projeto era apertado — dois anos para um livro de 150.000 palavras que cobre tanto terreno —, sou grata aos revisores técnicos que reservaram seu tempo precioso para revisar este livro tão rápido.
+
+[Luke Metz](https://x.com/luke_metz) é uma caixa de ressonância incrível, que checou minhas premissas e me impediu de seguir pelo caminho errado. [Han-chung Lee](https://www.linkedin.com/in/hanchunglee/), sempre a par das novidades de IA e do que acontece na comunidade, me apontou recursos que eu tinha deixado passar. Luke e Han foram os primeiros a revisar meus rascunhos antes de eu enviá-los à rodada seguinte de revisores técnicos, e sou eternamente grata a eles por tolerarem minhas bobagens e meus erros.
+
+Tendo liderado a inovação em IA em empresas da Fortune 500, [Vittorio Cretella](https://www.linkedin.com/in/vittorio-cretella/) e [Andrei Lopatenko](https://www.linkedin.com/in/lopatenko/) trouxeram um retorno valiosíssimo, que combinou profundo domínio técnico com visão executiva. [Vicki Reyzelman](https://www.linkedin.com/in/vickireyzelman/) me ajudou a aterrar o conteúdo e a mantê-lo relevante para quem vem da engenharia de software.
+
+[Eugene Yan](https://eugeneyan.com/), amizade querida e figura brilhante da ciência aplicada, me deu apoio técnico e emocional. Shawn Wang ([swyx](https://x.com/swyx)) fez uma checagem de clima importante, que me deixou mais confiante em relação ao livro. [Sanyam Bhutani](https://x.com/bhutanisanyam1) é uma das pessoas que melhor aprendem e uma das almas mais humildes que conheço: não só escreveu um retorno atencioso como gravou vídeos para explicar seus comentários.
+
+Kyle Krannen é um líder de destaque em aprendizado profundo, que entrevistou seus colegas e compartilhou comigo um relato incrível sobre o processo de ajuste fino da equipe, o que orientou o capítulo sobre ajuste fino. [Mark Saroufim](https://x.com/marksaroufim), uma mente inquisitiva sempre com o dedo no pulso dos problemas mais interessantes, me apresentou ótimos recursos sobre eficiência. O retorno de Kyle e de Mark foi decisivo para escrever os Capítulos 7 e 9.
+
+[Kittipat "Bot" Kampa](https://www.linkedin.com/in/kittipat-bot-kampa-1b1965/), além de responder às minhas muitas perguntas, compartilhou comigo uma visualização detalhada de como ele pensa a plataforma de IA. Admiro a abordagem sistemática de [Denys Linkov](https://www.linkedin.com/in/denyslinkov/) para avaliação e desenvolvimento de plataforma. [Chetan Tekur](https://www.linkedin.com/in/chetantekur/) deu ótimos exemplos, que me ajudaram a estruturar os padrões de aplicação de IA. Também quero agradecer a [Alex (Shengzhi Li) Li](https://www.linkedin.com/in/findalexli/) e a [Hien Luu](https://www.linkedin.com/in/hienluu/) pelo retorno atencioso ao meu rascunho sobre arquitetura de IA.
+
+[Aileen Bui](https://www.linkedin.com/in/aileenbui/) é um tesouro e compartilhou comentários e exemplos únicos sob a perspectiva de gerência de produto. Obrigada a [Todor Markov](https://www.linkedin.com/in/todor-markov-4aa38a67/) pelos conselhos acionáveis sobre o capítulo de RAG e agentes. Obrigada a [Tal Kachman](https://www.linkedin.com/in/tal-kachman/) por entrar de última hora e empurrar o capítulo de ajuste fino até a linha de chegada.
+
+Há tanta gente maravilhosa cuja companhia e cujas conversas me deram ideias que orientaram o conteúdo deste livro. Tentei ao máximo incluir aqui o nome de todos que ajudaram, mas, pela falibilidade inerente da memória humana, sem dúvida deixei muitos de fora. Se esqueci de incluir seu nome, saiba que não foi por falta de apreço pela sua contribuição; me lembre disso, por favor, para que eu possa corrigir o quanto antes!
+
+Andrew Francis, Anish Nag, [Anthony Galczak](https://www.linkedin.com/in/wgalczak/), [Anton Bacaj](https://x.com/abacaj), Balázs Galambosi, Charles Frye, Charles Packer, Chris Brousseau, Eric Hartford, Goku Mohandas, Hamel Husain, Harpreet Sahota, Hassan El Mghari, Huu Nguyen, Jeremy Howard, Jesse Silver, John Cook, [Juan Pablo Bottaro](https://www.linkedin.com/in/juan-pablo-bottaro/), Kyle Gallatin, Lance Martin, Lucio Dery, Matt Ross, Maxime Labonne, Miles Brundage, Nathan Lambert, Omar Khattab, [Phong Nguyen](https://www.linkedin.com/in/xphongvn/), Purnendu Mukherjee, Sam Reiswig, Sebastian Raschka, Shahul ES, Sharif Shameem, Soumith Chintala, Teknium, Tim Dettmers, Undi5, Val Andrei Fajardo, Vern Liang, Victor Sanh, Wing Lian, Xiquan Cui, Ying Sheng e Kristofer.
+
+Quero agradecer a todos os leitores iniciais que também escreveram com comentários. Douglas Bailley é um superleitor e compartilhou muito retorno atencioso. E Nutan Sahoo, por sugerir uma forma elegante de explicar a perplexidade.
+
+Aprendi muito com as discussões on-line com tanta gente. Obrigada a todos que já responderam às minhas perguntas, comentaram meus posts ou me mandaram um e-mail com suas ideias.
+
+É claro que o livro não teria sido possível sem a equipe da O'Reilly, em especial meus editores de desenvolvimento (Melissa Potter, Corbin Collins, Jill Leonard) e meus editores de produção (Kristen Brown e Elizabeth Kelly). Liz Wheeler é a pessoa mais criteriosa com quem já trabalhei na edição. Nicole Butterfield é uma força e acompanhou este livro da ideia ao produto final.
+
+Este livro, afinal, é o acúmulo de lições valiosíssimas que aprendi ao longo da carreira. Devo essas lições a colegas e ex-colegas extremamente competentes e pacientes. Cada pessoa com quem trabalhei me ensinou algo novo sobre trazer o ML para o mundo.
 
 ---
 

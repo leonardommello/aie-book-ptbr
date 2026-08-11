@@ -1,173 +1,173 @@
-# Table of Contents
+# Sumário
 
-_[PDF version](ToC.pdf)_
+_[Versão em PDF](ToC.pdf)_
 |                                                                                      |  |
 |---------------------------------------------------------------------------------------------|-----:|
-| **Preface**                                                                                 |    ix |
-| **1. Introduction to Building AI Applications with Foundation Models**                     |     1 |
-| The Rise of AI Engineering                                                                  |     2 |
-| - From Language Models to Large Language Models                                               |     2 |
-| - From Large Language Models to Foundation Models                                             |     8 |
-| - From Foundation Models to AI Engineering                                                   |    12 |
-| Foundation Model Use Cases                                                                  |    16 |
-| - Coding                                                                                    |    20 |
-| - Image and Video Production                                                                |    22 |
-| - Writing                                                                                   |    22 |
-| - Education                                                                                 |    24 |
-| - Conversational Bots                                                                       |    26 |
-| - Information Aggregation                                                                   |    26 |
-| - Data Organization                                                                         |    27 |
-| - Workflow Automation                                                                       |    28 |
-| Planning AI Applications                                                                    |    28 |
-| - Use Case Evaluation                                                                       |    29 |
-| - Setting Expectations                                                                      |    32 |
-| - Milestone Planning                                                                        |    33 |
-| - Maintenance                                                                               |    34 |
-| The AI Engineering Stack                                                                    |    35 |
-| - Three Layers of the AI Stack                                                              |    37 |
-| - AI Engineering Versus ML Engineering                                                     |    39 |
-| - AI Engineering Versus Full-Stack Engineering                                             |    46 |
-| Summary                                                                                     |    47 |
-| **2. Understanding Foundation Models**                                                     |    49 |
-| Training Data                                                                               |    50 |
-| - Multilingual Models                                                                       |    51 |
-| - Domain-Specific Models                                                                    |    56 |
-| Modeling                                                                                    |    58 |
-| - Model Architecture                                                                        |    58 |
-| - Model Size                                                                                |    67 |
-| Post-Training                                                                               |    78 |
-| - Supervised Finetuning                                                                     |    80 |
-| - Preference Finetuning                                                                     |    83 |
-| Sampling                                                                                    |    88 |
-| - Sampling Fundamentals                                                                     |    88 |
-| - Sampling Strategies                                                                       |    90 |
-| - Test Time Compute                                                                         |    96 |
-| - Structured Outputs                                                                        |    99 |
-| - The Probabilistic Nature of AI                                                           |   105 |
-| Summary                                                                                     |   111 |
-| **3. Evaluation Methodology**                                                              |   113 |
-| Challenges of Evaluating Foundation Models                                                 |   114 |
-| Understanding Language Modeling Metrics                                                    |   118 |
-| - Entropy                                                                                   |   119 |
-| - Cross Entropy                                                                             |   120 |
-| - Bits-per-Character and Bits-per-Byte                                                     |   121 |
-| - Perplexity                                                                                |   121 |
-| - Perplexity Interpretation and Use Cases                                                  |   122 |
-| Exact Evaluation                                                                           |   125 |
-| - Functional Correctness                                                                    |   126 |
-| - Similarity Measurements Against Reference Data                                           |   127 |
-| - Introduction to Embedding                                                                |   134 |
-| AI as a Judge                                                                              |   136 |
-| - Why AI as a Judge?                                                                        |   137 |
-| - How to Use AI as a Judge                                                                  |   138 |
-| - Limitations of AI as a Judge                                                              |   141 |
-| - What Models Can Act as Judges?                                                           |   145 |
-| Ranking Models with Comparative Evaluation                                                 |   148 |
-| - Challenges of Comparative Evaluation                                                     |   152 |
-| - The Future of Comparative Evaluation                                                     |   155 |
-| Summary                                                                                     |   156 |
-| **4. Evaluate AI Systems**                                                                 |   159 |
-| Evaluation Criteria                                                                         |   160 |
-| - Domain-Specific Capability                                                                |   161 |
-| - Generation Capability                                                                     |   163 |
-| - Instruction-Following Capability                                                         |   172 |
-| - Cost and Latency                                                                          |   177 |
-| Model Selection                                                                            |   179 |
-| - Model Selection Workflow                                                                  |   179 |
-| - Model Build Versus Buy                                                                    |   181 |
-| - Navigate Public Benchmarks                                                               |   191 |
-| Design Your Evaluation Pipeline                                                            |   200 |
-| - Step 1. Evaluate All Components in a System                                              |   200 |
-| - Step 2. Create an Evaluation Guideline                                                   |   202 |
-| - Step 3. Define Evaluation Methods and Data                                               |   204 |
-| Summary                                                                                     |   208 |
-| **5. Prompt Engineering**                                                                  |   211 |
-| Introduction to Prompting                                                                  |   212 |
-| - In-Context Learning: Zero-Shot and Few-Shot                                              |   213 |
-| - System Prompt and User Prompt                                                            |   215 |
-| - Context Length and Context Efficiency                                                    |   218 |
-| Prompt Engineering Best Practices                                                          |   220 |
-| - Write Clear and Explicit Instructions                                                    |   220 |
-| - Provide Sufficient Context                                                               |   223 |
-| - Break Complex Tasks into Simpler Subtasks                                                |   224 |
-| - Give the Model Time to Think                                                             |   227 |
-| - Iterate on Your Prompts                                                                  |   229 |
-| - Evaluate Prompt Engineering Tools                                                        |   230 |
-| - Organize and Version Prompts                                                             |   233 |
-| Defensive Prompt Engineering                                                               |   235 |
-| - Proprietary Prompts and Reverse Prompt Engineering                                       |   236 |
-| - Jailbreaking and Prompt Injection                                                        |   238 |
-| - Information Extraction                                                                    |   243 |
-| - Defenses Against Prompt Attacks                                                          |   248 |
-| Summary                                                                                     |   251 |
-| **6. RAG and Agents**                                                                      |   253 |
+| **Prefácio**                                                                                |    ix |
+| **1. Introdução à construção de aplicações de IA com modelos de fundação**                  |     1 |
+| A ascensão da engenharia de IA                                                              |     2 |
+| - De modelos de linguagem a modelos de linguagem de grande porte                              |     2 |
+| - De modelos de linguagem de grande porte a modelos de fundação                               |     8 |
+| - De modelos de fundação à engenharia de IA                                                  |    12 |
+| Casos de uso de modelos de fundação                                                         |    16 |
+| - Programação                                                                               |    20 |
+| - Produção de imagem e vídeo                                                                |    22 |
+| - Escrita                                                                                   |    22 |
+| - Educação                                                                                  |    24 |
+| - Bots conversacionais                                                                      |    26 |
+| - Agregação de informação                                                                   |    26 |
+| - Organização de dados                                                                      |    27 |
+| - Automação de fluxos de trabalho                                                           |    28 |
+| Planejamento de aplicações de IA                                                            |    28 |
+| - Avaliação do caso de uso                                                                  |    29 |
+| - Definição de expectativas                                                                 |    32 |
+| - Planejamento de marcos                                                                    |    33 |
+| - Manutenção                                                                                |    34 |
+| A pilha da engenharia de IA                                                                 |    35 |
+| - As três camadas da pilha de IA                                                            |    37 |
+| - Engenharia de IA versus engenharia de ML                                                 |    39 |
+| - Engenharia de IA versus engenharia full-stack                                            |    46 |
+| Resumo                                                                                      |    47 |
+| **2. Entendendo modelos de fundação**                                                      |    49 |
+| Dados de treinamento                                                                        |    50 |
+| - Modelos multilíngues                                                                      |    51 |
+| - Modelos específicos de domínio                                                            |    56 |
+| Modelagem                                                                                   |    58 |
+| - Arquitetura do modelo                                                                     |    58 |
+| - Tamanho do modelo                                                                         |    67 |
+| Pós-treinamento                                                                             |    78 |
+| - Ajuste fino supervisionado                                                                |    80 |
+| - Ajuste fino por preferência                                                               |    83 |
+| Amostragem                                                                                  |    88 |
+| - Fundamentos da amostragem                                                                 |    88 |
+| - Estratégias de amostragem                                                                 |    90 |
+| - Computação em tempo de teste                                                              |    96 |
+| - Saídas estruturadas                                                                       |    99 |
+| - A natureza probabilística da IA                                                          |   105 |
+| Resumo                                                                                      |   111 |
+| **3. Metodologia de avaliação**                                                            |   113 |
+| Desafios de avaliar modelos de fundação                                                    |   114 |
+| Entendendo as métricas de modelagem de linguagem                                           |   118 |
+| - Entropia                                                                                  |   119 |
+| - Entropia cruzada                                                                          |   120 |
+| - Bits por caractere e bits por byte                                                       |   121 |
+| - Perplexidade                                                                              |   121 |
+| - Interpretação e casos de uso da perplexidade                                             |   122 |
+| Avaliação exata                                                                            |   125 |
+| - Correção funcional                                                                        |   126 |
+| - Medidas de similaridade em relação a dados de referência                                 |   127 |
+| - Introdução às incorporações                                                              |   134 |
+| IA como juiz                                                                               |   136 |
+| - Por que IA como juiz?                                                                     |   137 |
+| - Como usar IA como juiz                                                                    |   138 |
+| - Limitações da IA como juiz                                                                |   141 |
+| - Que modelos podem atuar como juízes?                                                     |   145 |
+| Ranqueamento de modelos com avaliação comparativa                                          |   148 |
+| - Desafios da avaliação comparativa                                                        |   152 |
+| - O futuro da avaliação comparativa                                                        |   155 |
+| Resumo                                                                                      |   156 |
+| **4. Avaliar sistemas de IA**                                                              |   159 |
+| Critérios de avaliação                                                                      |   160 |
+| - Capacidade específica de domínio                                                          |   161 |
+| - Capacidade de geração                                                                     |   163 |
+| - Capacidade de seguir instruções                                                          |   172 |
+| - Custo e latência                                                                          |   177 |
+| Seleção de modelos                                                                         |   179 |
+| - Fluxo de trabalho de seleção de modelos                                                   |   179 |
+| - Construir ou comprar o modelo                                                             |   181 |
+| - Navegar pelos benchmarks públicos                                                        |   191 |
+| Projete seu pipeline de avaliação                                                          |   200 |
+| - Passo 1. Avaliar todos os componentes de um sistema                                      |   200 |
+| - Passo 2. Criar um guia de avaliação                                                      |   202 |
+| - Passo 3. Definir métodos e dados de avaliação                                            |   204 |
+| Resumo                                                                                      |   208 |
+| **5. Engenharia de prompt**                                                                |   211 |
+| Introdução ao uso de prompts                                                               |   212 |
+| - Aprendizado em contexto: zero-shot e few-shot                                            |   213 |
+| - Prompt de sistema e prompt de usuário                                                    |   215 |
+| - Comprimento de contexto e eficiência de contexto                                         |   218 |
+| Boas práticas de engenharia de prompt                                                      |   220 |
+| - Escreva instruções claras e explícitas                                                   |   220 |
+| - Forneça contexto suficiente                                                              |   223 |
+| - Divida tarefas complexas em subtarefas mais simples                                      |   224 |
+| - Dê tempo ao modelo para pensar                                                           |   227 |
+| - Itere sobre seus prompts                                                                 |   229 |
+| - Avalie as ferramentas de engenharia de prompt                                            |   230 |
+| - Organize e versione os prompts                                                           |   233 |
+| Engenharia de prompt defensiva                                                             |   235 |
+| - Prompts proprietários e engenharia reversa de prompt                                     |   236 |
+| - Jailbreak e injeção de prompt                                                            |   238 |
+| - Extração de informação                                                                    |   243 |
+| - Defesas contra ataques por prompt                                                        |   248 |
+| Resumo                                                                                      |   251 |
+| **6. RAG e agentes**                                                                       |   253 |
 | RAG                                                                                         |   253 |
-| - RAG Architecture                                                                         |   256 |
-| - Retrieval Algorithms                                                                     |   257 |
-| - Retrieval Optimization                                                                   |   268 |
-| - RAG Beyond Texts                                                                         |   273 |
-| Agents                                                                                     |   275 |
-| - Agent Overview                                                                           |   276 |
-| - Tools                                                                                    |   278 |
-| - Planning                                                                                 |   281 |
-| - Agent Failure Modes and Evaluation                                                       |   298 |
-| Memory                                                                                     |   300 |
-| Summary                                                                                     |   305 |
-| **7. Finetuning**                                                                          |   307 |
-| Finetuning Overview                                                                        |   308 |
-| When to Finetune                                                                         |   311 |
-| - Reasons to Finetune                                                                      |   311 |
-| - Reasons Not to Finetune                                                                  |   312 |
-| - Finetuning and RAG                                                                       |   316 |
-| Memory Bottlenecks                                                                         |   319 |
-| - Backpropagation and Trainable Parameters                                                 |   320 |
-| - Memory Math                                                                              |   322 |
-| - Numerical Representations                                                                |   325 |
-| - Quantization                                                                             |   328 |
-| Finetuning Techniques                                                                      |   332 |
-| - Parameter-Efficient Finetuning                                                           |   333 |
-| - Model Merging and Multi-Task Finetuning                                                  |   347 |
-| - Finetuning Tactics                                                                       |   357 |
-| Summary                                                                                     |   361 |
-| **8. Dataset Engineering**                                                                 |   363 |
-| Data Curation                                                                              |   365 |
-| - Data Quality                                                                             |   368 |
-| - Data Coverage                                                                            |   370 |
-| - Data Quantity                                                                            |   372 |
-| - Data Acquisition and Annotation                                                          |   377 |
-| Data Augmentation and Synthesis                                                            |   380 |
-| - Why Data Synthesis                                                                       |   381 |
-| - Traditional Data Synthesis Techniques                                                   |   383 |
-| - AI-Powered Data Synthesis                                                                |   386 |
-| - Model Distillation                                                                       |   395 |
-| Data Processing                                                                            |   396 |
-| - Inspect Data                                                                             |   397 |
-| - Deduplicate Data                                                                         |   399 |
-| - Clean and Filter Data                                                                    |   401 |
-| - Format Data                                                                                |   401 |
-| Summary                                                                                     |   403 |
-| **9. Inference Optimization**                                                              |   405 |
-| Understanding Inference Optimization                                                       |   406 |
-| - Inference Overview                                                                       |   406 |
-| - Inference Performance Metrics                                                            |   412 |
-| - AI Accelerators                                                                          |   419 |
-| Inference Optimization                                                                     |   426 |
-| - Model Optimization                                                                       |   426 |
-| - Inference Service Optimization                                                           |   440 |
-| Summary                                                                                     |   447 |
-| **10. AI Engineering Architecture and User Feedback**                                      |   449 |
-| AI Engineering Architecture                                                                |   449 |
-| - Step 1. Enhance Context                                                                  |   450 |
-| - Step 2. Put in Guardrails                                                                |   451 |
-| - Step 3. Add Model Router and Gateway                                                    |   456 |
-| - Step 4. Reduce Latency with Caches                                                      |   460 |
-| - Step 5. Add Agent Patterns                                                               |   463 |
-| - Monitoring and Observability                                                             |   465 |
-| - AI Pipeline Orchestration                                                                |   472 |
-| User Feedback                                                                              |   474 |
-| - Extracting Conversational Feedback                                                      |   475 |
-| - Feedback Design                                                                          |   480 |
-| - Feedback Limitations                                                                     |   490 |
-| Summary                                                                                     |   492 |
-| **Epilogue**                                                                               |   495 |
-| **Index**                                                                                  |   497 |
+| - Arquitetura de RAG                                                                       |   256 |
+| - Algoritmos de recuperação                                                                |   257 |
+| - Otimização da recuperação                                                                |   268 |
+| - RAG além de textos                                                                       |   273 |
+| Agentes                                                                                    |   275 |
+| - Visão geral de agentes                                                                   |   276 |
+| - Ferramentas                                                                              |   278 |
+| - Planejamento                                                                             |   281 |
+| - Modos de falha e avaliação de agentes                                                    |   298 |
+| Memória                                                                                    |   300 |
+| Resumo                                                                                      |   305 |
+| **7. Ajuste fino**                                                                         |   307 |
+| Visão geral do ajuste fino                                                                 |   308 |
+| Quando fazer ajuste fino                                                                 |   311 |
+| - Razões para fazer ajuste fino                                                            |   311 |
+| - Razões para não fazer ajuste fino                                                        |   312 |
+| - Ajuste fino e RAG                                                                        |   316 |
+| Gargalos de memória                                                                        |   319 |
+| - Retropropagação e parâmetros treináveis                                                  |   320 |
+| - Contas de memória                                                                        |   322 |
+| - Representações numéricas                                                                 |   325 |
+| - Quantização                                                                              |   328 |
+| Técnicas de ajuste fino                                                                    |   332 |
+| - Ajuste fino com eficiência de parâmetros                                                 |   333 |
+| - Fusão de modelos e ajuste fino multitarefa                                               |   347 |
+| - Táticas de ajuste fino                                                                   |   357 |
+| Resumo                                                                                      |   361 |
+| **8. Engenharia de conjuntos de dados**                                                    |   363 |
+| Curadoria de dados                                                                         |   365 |
+| - Qualidade dos dados                                                                      |   368 |
+| - Cobertura dos dados                                                                      |   370 |
+| - Quantidade de dados                                                                      |   372 |
+| - Aquisição e anotação de dados                                                            |   377 |
+| Aumento e síntese de dados                                                                 |   380 |
+| - Por que sintetizar dados                                                                 |   381 |
+| - Técnicas tradicionais de síntese de dados                                               |   383 |
+| - Síntese de dados com IA                                                                  |   386 |
+| - Destilação de modelos                                                                    |   395 |
+| Processamento de dados                                                                     |   396 |
+| - Inspecionar os dados                                                                     |   397 |
+| - Remover duplicatas                                                                       |   399 |
+| - Limpar e filtrar os dados                                                                |   401 |
+| - Formatar os dados                                                                          |   401 |
+| Resumo                                                                                      |   403 |
+| **9. Otimização de inferência**                                                            |   405 |
+| Entendendo a otimização de inferência                                                      |   406 |
+| - Visão geral da inferência                                                                |   406 |
+| - Métricas de desempenho de inferência                                                     |   412 |
+| - Aceleradores de IA                                                                       |   419 |
+| Otimização de inferência                                                                   |   426 |
+| - Otimização do modelo                                                                     |   426 |
+| - Otimização do serviço de inferência                                                      |   440 |
+| Resumo                                                                                      |   447 |
+| **10. Arquitetura de engenharia de IA e retorno do usuário**                               |   449 |
+| Arquitetura de engenharia de IA                                                            |   449 |
+| - Passo 1. Enriquecer o contexto                                                           |   450 |
+| - Passo 2. Colocar salvaguardas                                                            |   451 |
+| - Passo 3. Acrescentar roteador e gateway de modelos                                      |   456 |
+| - Passo 4. Reduzir a latência com caches                                                  |   460 |
+| - Passo 5. Acrescentar padrões de agentes                                                  |   463 |
+| - Monitoramento e observabilidade                                                          |   465 |
+| - Orquestração de pipelines de IA                                                          |   472 |
+| Retorno do usuário                                                                         |   474 |
+| - Extração do retorno conversacional                                                      |   475 |
+| - Design do retorno                                                                        |   480 |
+| - Limitações do retorno                                                                    |   490 |
+| Resumo                                                                                      |   492 |
+| **Epílogo**                                                                                |   495 |
+| **Índice remissivo**                                                                       |   497 |

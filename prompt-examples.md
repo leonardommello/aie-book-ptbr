@@ -1,22 +1,22 @@
-# Prompt examples
-Prompt examples from actual use cases (shared by their developers) and hypothetical prompts to demonstrate different prompt engineering techniques. More prompts will be added over time.
+# Exemplos de prompt
+Exemplos de prompt de casos de uso reais (compartilhados por quem os desenvolveu) e prompts hipotéticos que demonstram diferentes técnicas de engenharia de prompt. Mais prompts serão acrescentados com o tempo.
 
-- [Real-world use case prompts](#real-world-use-case-prompts)
-    - [Brex: Financial assistant](#brex-financial-assistant)
-    - [Cursor: Task-or-not classifier](#cursor-task-or-not-classifier)
-    - [Grab: Data entity classification](#grab-data-entity-classification)
+- [Prompts de casos de uso reais](#prompts-de-casos-de-uso-reais)
+    - [Brex: assistente financeiro](#brex-assistente-financeiro)
+    - [Cursor: classificador de tarefa ou não](#cursor-classificador-de-tarefa-ou-não)
+    - [Grab: classificação de entidades de dados](#grab-classificação-de-entidades-de-dados)
     - [Pinterest: Text-to-SQL](#pinterest-text-to-sql)
-    - [Thoughtworks: Co-pilot for product ideation](#thoughtworks-co-pilot-for-product-ideation)
-    - [Whatnot: Content moderation](#whatnot-content-moderation)
-- [Prompt attack examples](#prompt-attack-examples)
+    - [Thoughtworks: copiloto para ideação de produto](#thoughtworks-copiloto-para-ideação-de-produto)
+    - [Whatnot: moderação de conteúdo](#whatnot-moderação-de-conteúdo)
+- [Exemplos de ataques por prompt](#exemplos-de-ataques-por-prompt)
     
-    Coming soon ...
-- [Defensive prompt examples](#defensive-prompt-examples)
+    Em breve...
+- [Exemplos de prompts defensivos](#exemplos-de-prompts-defensivos)
     
-    Coming soon ...
+    Em breve...
 
-## Real world use case prompts
-### [Brex: Financial assistant](https://github.com/brexhq/prompt-engineering)
+## Prompts de casos de uso reais
+### [Brex: assistente financeiro](https://github.com/brexhq/prompt-engineering)
 
 ```
 You are a financial assistant. I am using Brex, a platform for managing expenses. I am located in [LOCATION]. My current time is [TIME]. Today is [DATE]. My current inbox looks like:
@@ -25,7 +25,7 @@ You are a financial assistant. I am using Brex, a platform for managing expenses
 
 Any responses to the user should be concise — no more than two sentences. They should include pleasant greetings, such as "good morning," as is appropriate for my time. The responses should be pleasant and fun.
 ```
-### [Cursor: Task-or-not classifier](https://www.cursor.com/blog/prompt-design#priompt-v01-a-first-attempt-at-a-prompt-design-library)
+### [Cursor: classificador de tarefa ou não](https://www.cursor.com/blog/prompt-design#priompt-v01-a-first-attempt-at-a-prompt-design-library)
 
 ```
 export default function DoableAsTaskPrompt(
@@ -64,7 +64,7 @@ export default function DoableAsTaskPrompt(
   );
 }
 ```
-### Grab: Data entity classification
+### Grab: classificação de entidades de dados
 [LLM-powered data classification for data entities at scale](https://engineering.grab.com/llm-powered-data-classification) (Liu et al., 2024)
 ```
 You are a database column tag classifier, your job is to assign the most appropriate tag based on table name and column name. The database columns are from a company that provides ride-hailing, delivery, and financial services. Assign one tag per column. However not all columns can be tagged and these columns should be assigned <None>. You are precise, careful and do your best to make sure the tag assigned is the most appropriate.
@@ -131,7 +131,7 @@ Please help to generate a {dialect} query to answer the question. Your response 
 {question}
 ```
 
-### Thoughtworks: Co-pilot for product ideation
+### Thoughtworks: copiloto para ideação de produto
 [Building Boba AI](https://www.martinfowler.com/articles/building-boba.html) (Farooq Ali, 2023)
 
 ```
@@ -163,7 +163,7 @@ You will respond in JSON format containing two keys, "questions" and "strategies
 "assumptions": <string>
 ```
 
-### Whatnot: Content moderation
+### Whatnot: moderação de conteúdo
 [How Whatnot Utilizes Generative AI to Enhance Trust and Safety](https://medium.com/whatnot-engineering/how-whatnot-utilizes-generative-ai-to-enhance-trust-and-safety-c7968eb6315e) (2023)
 
 ```
@@ -189,6 +189,6 @@ Expected output
 }
 ```
 
-## Prompt attack examples
+## Exemplos de ataques por prompt
 
-## Defensive prompt examples
+## Exemplos de prompts defensivos

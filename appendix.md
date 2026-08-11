@@ -1,4 +1,4 @@
-_Coming soon_
+_Em breve_
 
-This section contains notes that are related to the concepts discussed in the book but too nitty gritty to be included. Most people will probably find this boring.
+Esta seção reúne notas relacionadas aos conceitos discutidos no livro, mas detalhadas demais para entrar nele. A maioria das pessoas provavelmente vai achar isto entediante.
 

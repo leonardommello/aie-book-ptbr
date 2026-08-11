@@ -1,0 +1,53 @@
+---
+title: "AI Engineering — recursos em português"
+subtitle: "Tradução para português do Brasil do repositório de recursos do livro"
+---
+
+Este site reúne, em português do Brasil, o **repositório de recursos** que acompanha o
+livro [*AI Engineering: Building Applications with Foundation Models*](https://www.oreilly.com/library/view/ai-engineering/9781098166298/),
+de Chip Huyen (O'Reilly, 2025).
+
+São os materiais de apoio publicados pela autora no repositório aberto do livro: o
+sumário, os resumos de capítulo, as notas de estudo, listas de recursos, exemplos de
+prompt, estudos de caso e o apêndice.
+
+::: {.callout-important}
+## Isto não é o livro
+
+Este site traduz **apenas o repositório de recursos** — o material de apoio que a autora
+publica abertamente no GitHub.
+
+O texto do livro não faz parte desse repositório e **não está aqui**. Para lê-lo,
+adquira o livro na [O'Reilly](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
+ou na [Amazon](https://www.amazon.com/AI-Engineering-Building-Applications-Foundation/dp/1098166302).
+:::
+
+::: {.callout-note}
+## Tradução não oficial
+
+Tradução mantida pela comunidade, sem vínculo com a autora ou com a editora. O material
+original é de Chip Huyen; a tradução é derivada e não substitui a fonte.
+Repositório original: [chiphuyen/aie-book](https://github.com/chiphuyen/aie-book).
+Erros de tradução são responsabilidade desta tradução — [abra uma issue](https://github.com/leonardommello/aie-book-ptbr/issues).
+:::
+
+## O que tem aqui
+
+| Página | Conteúdo |
+|---|---|
+| [Sumário](ToC.md) | A estrutura completa do livro, capítulo a capítulo |
+| [Resumos de capítulo](chapter-summaries.md) | O que cada capítulo cobre |
+| [Notas de estudo](study-notes.md) | Roteiro de estudo sobre engenharia de IA |
+| [Exemplos de prompt](prompt-examples.md) | Prompts usados e discutidos no livro |
+| [Estudos de caso](case-studies.md) | Casos reais de aplicações com modelos de fundação |
+| [Desalinhamento](misalignment.md) | Notas sobre desalinhamento em sistemas de IA |
+| [Recursos](resources.md) | Artigos, ferramentas e leituras recomendadas |
+| [Apêndice](appendix.md) | Material complementar |
+| [Traduções](translations.md) | Edições do livro em outros idiomas |
+
+## Convenções de tradução
+
+Termos técnicos seguem o [glossário](GLOSSARIO.md): nomes de modelos, bibliotecas,
+empresas e siglas consagradas permanecem em inglês; a prosa vai integralmente para o
+português. Links para fontes em inglês são preservados como estão — o conteúdo apontado
+continua em inglês.

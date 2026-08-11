@@ -1,0 +1,63 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "AI Engineering — recursos em português"
+  subtitle: "Tradução para português do Brasil do repositório de recursos do livro"
+  author: "Chip Huyen — tradução da comunidade"
+  search: true
+  reader-mode: true
+  page-navigation: true
+  repo-url: https://github.com/leonardommello/aie-book-ptbr
+  repo-actions: [source, issue]
+  sidebar:
+    style: docked
+    collapse-level: 1
+  page-footer:
+    left: |
+      Material original © Chip Huyen.
+    right: |
+      Tradução não oficial mantida pela comunidade.
+  chapters:
+    - index.qmd
+    - part: "O livro"
+      chapters:
+        - ToC.md
+        - chapter-summaries.md
+        - appendix.md
+        - translations.md
+    - part: "Estudo e prática"
+      chapters:
+        - study-notes.md
+        - prompt-examples.md
+        - case-studies.md
+        - misalignment.md
+    - part: "Recursos"
+      chapters:
+        - resources.md
+    - part: "Ferramentas"
+      chapters:
+        - scripts/ai-heatmap.ipynb
+    - part: "Referência"
+      chapters:
+        - GLOSSARIO.md
+
+lang: pt
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/theme.scss]
+      dark: [darkly, assets/theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    toc-title: "Nesta página"
+    link-external-newwindow: true
+
+# Notebooks são renderizados com as saídas já salvas.
+# O CI nunca executa código.
+execute:
+  enabled: false
+  freeze: true

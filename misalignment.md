@@ -1,4 +1,4 @@
-# Misalignment AI
-A curated list of generative AI use cases that go wrong.
+# Desalinhamento em IA
+Uma lista curada de casos de uso de IA generativa que dão errado.
 
-_Coming soon_
+_Em breve_

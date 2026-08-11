@@ -1,233 +1,233 @@
-# Chapter Summaries
+# Resumos dos capítulos
 
-These are the summaries of each chapter taken from the book. Some of the summaries might not make sense to readers without having first read the originating chapters, but I hope that they will give you a sense of what the book is about.
+Estes são os resumos de cada capítulo, extraídos do livro. Alguns deles podem não fazer muito sentido para quem ainda não leu os capítulos correspondentes, mas espero que deem uma ideia do que o livro trata.
 
-* [Chapter 1. Introduction to Building AI Applications with Foundation Models](#chapter-1-introduction-to-building-ai-applications-with-foundation-models)
-* [Chapter 2. Understanding Foundation Models](#chapter-2-understanding-foundation-models)
-* [Chapter 3. Evaluation Methodology](#chapter-3-evaluation-methodology)
-* [Chapter 4. Evaluate AI Systems](#chapter-4-evaluate-ai-systems)
-* [Chapter 5. Prompt Engineering](#chapter-5-prompt-engineering)
-* [Chapter 6. RAG and Agents](#chapter-6-rag-and-agents)
-* [Chapter 7. Finetuning](#chapter-7-finetuning)
-* [Chapter 8. Dataset Engineering](#chapter-8-dataset-engineering)
-* [Chapter 9. Inference Optimization](#chapter-9-inference-optimization)
-* [Chapter 10. AI Engineering Architecture and User Feedback](#chapter-10-ai-engineering-architecture-and-user-feedback)
+* [Capítulo 1. Introdução à construção de aplicações de IA com modelos de fundação](#capítulo-1-introdução-à-construção-de-aplicações-de-ia-com-modelos-de-fundação)
+* [Capítulo 2. Entendendo modelos de fundação](#capítulo-2-entendendo-modelos-de-fundação)
+* [Capítulo 3. Metodologia de avaliação](#capítulo-3-metodologia-de-avaliação)
+* [Capítulo 4. Avaliar sistemas de IA](#capítulo-4-avaliar-sistemas-de-ia)
+* [Capítulo 5. Engenharia de prompt](#capítulo-5-engenharia-de-prompt)
+* [Capítulo 6. RAG e agentes](#capítulo-6-rag-e-agentes)
+* [Capítulo 7. Ajuste fino](#capítulo-7-ajuste-fino)
+* [Capítulo 8. Engenharia de conjuntos de dados](#capítulo-8-engenharia-de-conjuntos-de-dados)
+* [Capítulo 9. Otimização de inferência](#capítulo-9-otimização-de-inferência)
+* [Capítulo 10. Arquitetura de engenharia de IA e retorno do usuário](#capítulo-10-arquitetura-de-engenharia-de-ia-e-retorno-do-usuário)
 
-## Chapter 1. Introduction to Building AI Applications with Foundation Models
-Table 1-3. Common generative AI use cases across consumer and enterprise applications.
+## Capítulo 1. Introdução à construção de aplicações de IA com modelos de fundação
+Tabela 1-3. Casos de uso comuns de IA generativa em aplicações de consumo e corporativas.
 
 
-| Category               | Examples of Consumer Use Cases          | Examples of Enterprise Use Cases           |
+| Categoria               | Exemplos de casos de uso de consumo          | Exemplos de casos de uso corporativos           |
 |------------------------|-----------------------------------------|-------------------------------------------|
-| Coding                | Coding                                  | Coding                                    |
-| Image and Video Production | Photo and video editing<br>Design      | Presentation<br>Ad generation             |
-| Writing               | Email<br>Social media and blog posts    | Copywriting<br>SEO<br>Reports, memos, design docs |
-| Education             | Tutoring<br>Essay grading               | Employee onboarding<br>Employee upskill training |
-| Conversational Bots   | General chatbot<br>AI companion         | Customer support<br>Product copilots      |
-| Information Aggregation | Summarization<br>Talk-to-your-docs     | Summarization<br>Market research          |
-| Data Organization     | Image search<br>Memex                   | Knowledge management<br>Document processing |
-| Workflow Automation   | Travel planning<br>Event planning       | Data extraction, entry, and annotation<br>Lead generation |
+| Programação                | Programação                                  | Programação                                    |
+| Produção de imagem e vídeo | Edição de foto e vídeo<br>Design      | Apresentações<br>Geração de anúncios             |
+| Escrita               | E-mail<br>Redes sociais e posts de blog    | Redação publicitária<br>SEO<br>Relatórios, memorandos, documentos de projeto |
+| Educação             | Tutoria<br>Correção de redações               | Integração de novos funcionários<br>Treinamento de requalificação |
+| Bots conversacionais   | Chatbot de uso geral<br>Companhia de IA         | Suporte ao cliente<br>Copilotos de produto      |
+| Agregação de informação | Sumarização<br>Conversar com seus documentos     | Sumarização<br>Pesquisa de mercado          |
+| Organização de dados     | Busca de imagens<br>Memex                   | Gestão do conhecimento<br>Processamento de documentos |
+| Automação de fluxos de trabalho   | Planejamento de viagens<br>Planejamento de eventos       | Extração, entrada e anotação de dados<br>Geração de leads |
 <br>
 
-I meant this chapter to serve two purposes. One is to explain the emergence of AI engineering as a discipline, thanks to the availability of foundation models. Two is to give an overview of the process needed to build applications on top of these models. I hope that this chapter achieved this goal. As an overview chapter, it only lightly touched on many concepts. These concepts will be explored further in the rest of the book.
+Este capítulo foi pensado para cumprir dois propósitos. O primeiro é explicar o surgimento da engenharia de IA como disciplina, graças à disponibilidade dos modelos de fundação. O segundo é dar uma visão geral do processo necessário para construir aplicações sobre esses modelos. Espero que o capítulo tenha alcançado esse objetivo. Por ser um capítulo panorâmico, ele tocou apenas de leve em muitos conceitos, que serão aprofundados no restante do livro.
 
-The chapter discussed the rapid evolution of AI in recent years. It walked through some of the most notable transformations, starting with the transition from language models to large language models, thanks to a training approach called self-supervision. It then traced how language models incorporated other data modalities to become foundation models, and how foundation models gave rise to AI engineering.
+O capítulo discutiu a rápida evolução da IA nos últimos anos. Percorreu algumas das transformações mais notáveis, começando pela transição de modelos de linguagem para modelos de linguagem de grande porte, graças a uma abordagem de treinamento chamada autossupervisão. Em seguida, traçou como os modelos de linguagem incorporaram outras modalidades de dados até se tornarem modelos de fundação e como os modelos de fundação deram origem à engenharia de IA.
 
-The rapid growth of AI engineering is motivated by the many applications that the emerging capabilities of foundation models enable. This chapter discussed some of the most successful application patterns, both for consumers and enterprises. Despite the incredible number of AI applications already in production, we're still in the early stages of AI engineering, with countless more innovations yet to be built.
+O crescimento acelerado da engenharia de IA é movido pelas muitas aplicações que as capacidades emergentes dos modelos de fundação viabilizam. Este capítulo discutiu alguns dos padrões de aplicação mais bem-sucedidos, tanto para consumidores quanto para empresas. Apesar do número impressionante de aplicações de IA já em produção, ainda estamos nos estágios iniciais da engenharia de IA, com incontáveis inovações por construir.
 
-Before building an application, an important yet often overlooked question is whether you should build it. This chapter discussed this question together with major considerations for building AI applications.
+Antes de construir uma aplicação, uma pergunta importante e muitas vezes negligenciada é se você deveria construí-la. Este capítulo tratou dessa pergunta junto com as principais considerações para construir aplicações de IA.
 
-While AI engineering is a new term, it evolved out of ML engineering, which is the overarching discipline involved with building applications with all ML models. Many principles from ML engineering are still applicable to AI engineering. However, AI engineering also brings with it new challenges and solutions. The last section of the chapter discusses the AI engineering stack, including how it has changed from ML engineering.
+Embora engenharia de IA seja um termo novo, ele evoluiu da engenharia de ML, a disciplina mais ampla envolvida na construção de aplicações com todo tipo de modelo de ML. Muitos princípios da engenharia de ML continuam válidos para a engenharia de IA. No entanto, a engenharia de IA também traz consigo novos desafios e novas soluções. A última seção do capítulo discute a pilha da engenharia de IA, incluindo como ela mudou em relação à engenharia de ML.
 
-One aspect of AI engineering that is especially challenging to capture in writing is the incredible amount of collective energy, creativity, and engineering talent that the community brings. This collective enthusiasm can often be overwhelming, as it's impossible to keep up-to-date with new techniques, discoveries, and engineering feats that seem to happen constantly.
+Um aspecto da engenharia de IA especialmente difícil de capturar por escrito é a quantidade incrível de energia coletiva, criatividade e talento de engenharia que a comunidade traz. Esse entusiasmo coletivo muitas vezes é avassalador, já que é impossível se manter em dia com as novas técnicas, descobertas e proezas de engenharia que parecem acontecer o tempo todo.
 
-One consolidation is that since AI is great at information aggregation, it can help us aggregate and summarize all these new updates. But tools can only help to a certain extent. The more overwhelming a space is, the more important it is to have a framework to help us navigate it. This book aims to provide such a framework.
+Um consolo é que, como a IA é ótima em agregar informação, ela pode nos ajudar a agregar e resumir todas essas novidades. Mas as ferramentas só ajudam até certo ponto. Quanto mais avassalador é um campo, mais importante é ter um arcabouço que ajude a navegá-lo. Este livro pretende oferecer esse arcabouço.
 
-The rest of the book will explore this framework step-by-step, starting with the fundamental building block of AI engineering: the foundation models that make so many amazing applications possible.
+O restante do livro explora esse arcabouço passo a passo, começando pelo bloco fundamental da engenharia de IA: os modelos de fundação que tornam possíveis tantas aplicações incríveis.
 
-## Chapter 2. Understanding Foundation Models
+## Capítulo 2. Entendendo modelos de fundação
 <center><img src="assets/rlhf.png" width="800"><br>
-<i>The overall training workflow with pre-training, SFT, and RLHF. Image originally from my <a href="https://huyenchip.com/2023/05/02/rlhf.html">RLHF blog post</a> (May 2023)</i>
+<i>O fluxo geral de treinamento com pré-treinamento, SFT e RLHF. Imagem originalmente do meu <a href="https://huyenchip.com/2023/05/02/rlhf.html">post sobre RLHF</a> (maio de 2023)</i>
 </center>
 <br>
 
-This chapter discussed the core design decisions when building a foundation model. Since most people will be using ready-made foundation models instead of training one from scratch, I skipped the nitty-gritty training details in favor of modeling factors that help you determine what models to use and how to use them.
+Este capítulo discutiu as principais decisões de projeto na construção de um modelo de fundação. Como a maioria das pessoas vai usar modelos de fundação prontos em vez de treinar um do zero, pulei os detalhes minuciosos do treinamento em favor dos fatores de modelagem que ajudam você a determinar quais modelos usar e como usá-los.
 
-A crucial factor affecting a model's performance is its training data. Large models require a large amount of training data, which can be expensive and time-consuming to acquire. Model providers, therefore, often leverage whatever data is available. This leads to models that can perform well on the many tasks present in the training data, which may not include the specific task you want. This chapter went over why it's often necessary to curate training data to develop models targeting specific languages, especially low-resource languages, and specific domains.
+Um fator crucial que afeta o desempenho de um modelo são seus dados de treinamento. Modelos grandes exigem uma grande quantidade de dados de treinamento, que podem ser caros e demorados de obter. Por isso, os provedores de modelos costumam aproveitar quaisquer dados disponíveis. Isso leva a modelos que vão bem nas muitas tarefas presentes nos dados de treinamento, que podem não incluir a tarefa específica que você quer. Este capítulo mostrou por que muitas vezes é necessário fazer curadoria dos dados de treinamento para desenvolver modelos voltados a idiomas específicos, sobretudo os de poucos recursos, e a domínios específicos.
 
-After sourcing the data, model development can begin. While model training often dominates the headlines, an important step prior to that is architecting the model. The chapter looked into modeling choices, such as model architecture and model size. The dominating architecture for language-based foundation models is transformer. This chapter explored the problems that the transformer architecture was designed to address, as well as its limitations.
+Depois de obter os dados, o desenvolvimento do modelo pode começar. Embora o treinamento costume dominar as manchetes, um passo importante antes dele é arquitetar o modelo. O capítulo examinou escolhas de modelagem, como a arquitetura e o tamanho do modelo. A arquitetura dominante para modelos de fundação baseados em linguagem é o transformer. Este capítulo explorou os problemas que a arquitetura transformer foi projetada para resolver, bem como suas limitações.
 
-The scale of a model can be measured by three key numbers: the number of parameters, the number of training tokens, and the number of FLOPs needed for training. Two aspects that influence the amount of compute needed to train a model are the model size and the data size. The scaling law helps determine the optimal number of parameters and number of tokens given a compute budget. This chapter also looked at the scaling bottlenecks. Up until now, scaling up a model generally makes it better. But how long will this continue to be true?
+A escala de um modelo pode ser medida por três números-chave: o número de parâmetros, o número de tokens de treinamento e o número de FLOPs necessários para o treinamento. Dois aspectos que influenciam a quantidade de computação necessária para treinar um modelo são o tamanho do modelo e o tamanho dos dados. A lei de escalonamento ajuda a determinar o número ótimo de parâmetros e de tokens dado um orçamento de computação. Este capítulo também examinou os gargalos de escalonamento. Até agora, aumentar a escala de um modelo em geral o torna melhor. Mas por quanto tempo isso continuará valendo?
 
-Due to the low quality of training data and self-supervision during pre-training, the resulting model might produce outputs that don't align with what users want. This is addressed by post-training, which consists of two steps: supervised finetuning and preference finetuning. Human preference is diverse and impossible to capture in a single mathematical formula, so existing solutions are far from foolproof.
+Devido à baixa qualidade dos dados de treinamento e à autossupervisão durante o pré-treinamento, o modelo resultante pode produzir saídas que não se alinham ao que os usuários querem. Isso é tratado no pós-treinamento, que consiste em dois passos: ajuste fino supervisionado e ajuste fino por preferência. A preferência humana é diversa e impossível de capturar em uma única fórmula matemática, então as soluções existentes estão longe de ser infalíveis.
 
-This chapter also covered one of my favorite topics: sampling, the process by which a model generates output tokens. Sampling makes AI models probabilistic. This probabilistic nature is what makes models like ChatGPT and Gemini great for creative tasks and fun to talk to. However, this probabilistic nature also causes inconsistency and hallucinations.
+Este capítulo também cobriu um dos meus temas favoritos: a amostragem, o processo pelo qual um modelo gera tokens de saída. A amostragem torna os modelos de IA probabilísticos. Essa natureza probabilística é o que faz modelos como ChatGPT e Gemini serem ótimos para tarefas criativas e divertidos de conversar. Ela também causa, porém, inconsistência e alucinações.
 
-Working with AI models requires building your workflows around their probabilistic nature. The rest of this book will explore how to make AI engineering, if not deterministic, at least systematic. The first step towards systematic AI engineering is to establish a solid evaluation pipeline to help us detect failures and unexpected changes. Evaluation for foundation models is so crucial that I dedicated two chapters to it, starting with the next chapter.
+Trabalhar com modelos de IA exige construir seus fluxos de trabalho em torno dessa natureza probabilística. O restante deste livro explora como tornar a engenharia de IA, se não determinística, ao menos sistemática. O primeiro passo rumo a uma engenharia de IA sistemática é estabelecer um pipeline de avaliação sólido, que ajude a detectar falhas e mudanças inesperadas. A avaliação de modelos de fundação é tão crucial que dediquei dois capítulos a ela, a começar pelo próximo.
 
-## Chapter 3. Evaluation Methodology
+## Capítulo 3. Metodologia de avaliação
 <center><img src="assets/ai-judge.png" width="600"><br>
-<i>Figure 3-8. An example of an AI judge that evaluates the quality of an answer given a question.</i>
+<i>Figura 3-8. Exemplo de um juiz de IA que avalia a qualidade de uma resposta dada uma pergunta.</i>
 </center>
 <br>
 
-The stronger AI models become, the higher the potential for catastrophic failures, which makes evaluation even more important. At the same time, evaluating open-ended, powerful models is challenging. These challenges make many teams turn towards human evaluation. Having humans in the loop for sanity checks is always helpful, and in many cases, human evaluation is essential. However, this chapter focused on different approaches to automatic evaluation.
+Quanto mais fortes os modelos de IA ficam, maior o potencial de falhas catastróficas, o que torna a avaliação ainda mais importante. Ao mesmo tempo, avaliar modelos poderosos, capazes de gerar respostas abertas, é difícil. Esses desafios levam muitos times à avaliação humana. Ter humanos no ciclo para verificações de sanidade sempre ajuda e, em muitos casos, a avaliação humana é essencial. Este capítulo, porém, focou em diferentes abordagens de avaliação automática.
 
-This chapter starts with a discussion on why foundation models are harder to evaluate than traditional ML models. While many new evaluation techniques are being developed, investments in evaluation still lag behind investments in model and application development.
+O capítulo começa com uma discussão sobre por que modelos de fundação são mais difíceis de avaliar do que modelos de ML tradicionais. Embora muitas técnicas novas de avaliação estejam sendo desenvolvidas, os investimentos em avaliação ainda ficam atrás dos investimentos em desenvolvimento de modelos e de aplicações.
 
-Since many foundation models have a language model component, we zoomed into language modeling metrics, including perplexity and cross entropy. Many people I've talked to find these metrics confusing, so I included a section on how to interpret these metrics and leverage them in evaluation and data processing.
+Como muitos modelos de fundação têm um componente de modelo de linguagem, aproximamos o foco nas métricas de modelagem de linguagem, entre elas a perplexidade e a entropia cruzada. Muita gente com quem conversei acha essas métricas confusas, então incluí uma seção sobre como interpretá-las e como aproveitá-las na avaliação e no processamento de dados.
 
-This chapter then shifted the focus to the different approaches to evaluate open-ended responses, including functional correctness, similarity scores, and AI-as-a-judge. The first two evaluation approaches are exact, while AI-as-a-judge evaluation is subjective.
+Em seguida, o capítulo deslocou o foco para as diferentes abordagens de avaliação de respostas abertas, incluindo correção funcional, escores de similaridade e IA como juiz. As duas primeiras abordagens são exatas, enquanto a avaliação por IA como juiz é subjetiva.
 
-Unlike exact evaluation, subjective metrics are highly dependent on the judge. Their scores need to be interpreted in the context of what judges are being used. Scores aimed to measure the same quality by different AI judges might not be comparable. AI judges, like all AI applications, should be iterated upon, meaning their judgments change. This makes them unreliable as benchmarks to track an application's changes over time. While promising, AI judges should be supplemented with exact evaluation, human evaluation, or both.
+Diferentemente da avaliação exata, as métricas subjetivas dependem muito do juiz. Seus escores precisam ser interpretados no contexto de quais juízes estão sendo usados. Escores que pretendem medir a mesma qualidade, mas vêm de juízes de IA diferentes, podem não ser comparáveis. Juízes de IA, como toda aplicação de IA, passam por iterações, o que significa que seus julgamentos mudam. Isso os torna pouco confiáveis como benchmarks para acompanhar as mudanças de uma aplicação ao longo do tempo. Embora promissores, os juízes de IA devem ser complementados por avaliação exata, avaliação humana ou ambas.
 
-When evaluating models, you can evaluate each model independently, and then rank them by their scores. Alternatively, you can rank them using comparative signals: which of the two models is better? Comparative evaluation is common in sports, especially chess, and is gaining traction in AI evaluation. Both comparative evaluation and the post-training alignment process need preference signals, which are expensive to collect. This motivated the development of preference models: specialized AI judges that predict which response users prefer.
+Ao avaliar modelos, você pode avaliar cada um de forma independente e depois ordená-los pelos escores. Como alternativa, pode ordená-los usando sinais comparativos: qual dos dois modelos é melhor? A avaliação comparativa é comum nos esportes, sobretudo no xadrez, e vem ganhando espaço na avaliação de IA. Tanto a avaliação comparativa quanto o processo de alinhamento no pós-treinamento precisam de sinais de preferência, que são caros de coletar. Isso motivou o desenvolvimento dos modelos de preferência: juízes de IA especializados que preveem qual resposta os usuários preferem.
 
-While language modeling metrics and hand-designed similarity measurements have existed for some time, AI-as-a-judge and comparative evaluation have only gained adoption with the emergence of foundation models. Many teams are figuring out how to incorporate them into their evaluation pipelines. Figuring out how to build a reliable evaluation pipeline to evaluate open-ended applications is the topic of the next chapter.
+Enquanto as métricas de modelagem de linguagem e as medidas de similaridade desenhadas à mão existem há algum tempo, a IA como juiz e a avaliação comparativa só ganharam adoção com o surgimento dos modelos de fundação. Muitos times estão descobrindo como incorporá-las a seus pipelines de avaliação. Como construir um pipeline de avaliação confiável para aplicações de resposta aberta é o tema do próximo capítulo.
 
-## Chapter 4. Evaluate AI Systems
+## Capítulo 4. Avaliar sistemas de IA
 <center><img src="assets/evaluation-process.png" width="600"><br>
-<i>Figure 4-5. An overview of the evaluation workflow to evaluate models for your application.</i>
+<i>Figura 4-5. Visão geral do fluxo de trabalho para avaliar modelos para a sua aplicação.</i>
 </center>
 <br>
 
-This is one of the hardest, but I believe one of the most important, topics that I've written about with regard to AI. Not having a reliable evaluation pipeline is one of the biggest blockers to AI adoption. While evaluation takes time, a reliable evaluation pipeline will enable you to reduce risks, discover opportunities to improve performance, and benchmark progresses, which will all save you time and headaches down the line.
+Este é um dos temas mais difíceis, mas acredito que também um dos mais importantes, sobre os quais escrevi a respeito de IA. Não ter um pipeline de avaliação confiável é um dos maiores obstáculos à adoção de IA. A avaliação toma tempo, mas um pipeline confiável permite reduzir riscos, descobrir oportunidades de melhorar o desempenho e comparar progressos, o que poupa tempo e dor de cabeça mais adiante.
 
-Given an increasing number of readily available foundation models, for most application developers, the challenge is no longer in developing models but in selecting the right models for your application. This chapter discussed a list of criteria that are often used to evaluate models for applications, and how they are evaluated. It discussed how to evaluate both domain-specific capabilities and generation capabilities, including factual consistency and safety. Many criteria to evaluate foundation models evolved from traditional NLP, including fluency, coherence, and faithfulness.
+Diante do número crescente de modelos de fundação prontamente disponíveis, para a maioria de quem desenvolve aplicações o desafio já não está em desenvolver modelos, e sim em selecionar os modelos certos para a sua aplicação. Este capítulo discutiu uma lista de critérios usados com frequência para avaliar modelos para aplicações e como esses critérios são avaliados. Tratou de como avaliar tanto capacidades específicas de domínio quanto capacidades de geração, incluindo consistência factual e segurança. Muitos critérios para avaliar modelos de fundação evoluíram do processamento de linguagem natural (NLP) tradicional, entre eles fluência, coerência e fidelidade.
 
-To help answer the question of whether to host a model or to use a model API, this chapter outlined the pros and cons of each approach along seven axes, including data privacy, data lineage, performance, functionality, control, and cost. This decision, like all the build versus buy decisions, is unique to every team, depending on not only what the team needs but also what the team wants.
+Para ajudar a responder se convém hospedar um modelo ou usar uma API de modelo, este capítulo delineou os prós e os contras de cada abordagem em sete eixos, entre eles privacidade dos dados, linhagem dos dados, desempenho, funcionalidade, controle e custo. Essa decisão, como toda decisão de construir ou comprar, é única para cada time e depende não só do que o time precisa, mas também do que o time quer.
 
-This chapter also explored the thousands of available public benchmarks. Public benchmarks can help you weed out bad models, but won't help you find the best models for your applications. Public benchmarks are also likely contaminated, as their data is included in the training data of many models. There are public leaderboards that aggregate multiple benchmarks to rank models, but how benchmarks are selected and aggregated is not a clear process. The lessons learned from public leaderboards are helpful for model selection, as model selection is akin to creating a private leaderboard to rank models based on your needs.
+Este capítulo também explorou os milhares de benchmarks públicos disponíveis. Benchmarks públicos ajudam a descartar modelos ruins, mas não ajudam a encontrar os melhores modelos para as suas aplicações. Eles também estão provavelmente contaminados, já que seus dados entram nos dados de treinamento de muitos modelos. Existem placares públicos que agregam múltiplos benchmarks para ordenar modelos, mas como esses benchmarks são escolhidos e agregados não é um processo claro. As lições aprendidas com os placares públicos ajudam na seleção de modelos, pois selecionar modelos é parecido com criar um placar particular que os ordena segundo as suas necessidades.
 
-This chapter ends with how to use all the evaluation techniques and criteria discussed in the last chapter and how to create an evaluation pipeline for your application. No perfect evaluation method exists. It's impossible to capture the ability of a high-dimensional system using one- or few-dimensional scores. There are many limitations and biases associated with evaluating modern AI systems. However, this doesn't mean we shouldn't do it. Combining different methods and approaches can help mitigate many of these challenges.
+O capítulo termina mostrando como usar todas as técnicas e todos os critérios de avaliação discutidos no capítulo anterior e como criar um pipeline de avaliação para a sua aplicação. Não existe método de avaliação perfeito. É impossível capturar a capacidade de um sistema de alta dimensionalidade com escores de uma ou de poucas dimensões. Há muitas limitações e vieses associados à avaliação de sistemas modernos de IA. Isso, porém, não significa que não devamos avaliar. Combinar métodos e abordagens diferentes ajuda a mitigar boa parte desses desafios.
 
-Even though dedicated discussions on evaluation end here, evaluation will come up again and again, not just throughout the book but also throughout your application development process. Chapter 6 explores on evaluating retrieval and agentic systems, while Chapters 7 and 9 focus on calculating a model's memory usage, latency, and costs. Data quality verification is addressed in Chapter 8, and using user feedback to evaluate production applications in Chapter 10.
+Ainda que as discussões dedicadas à avaliação terminem aqui, a avaliação voltará a aparecer diversas vezes, não só ao longo do livro como ao longo do seu processo de desenvolvimento de aplicações. O Capítulo 6 explora a avaliação de sistemas de recuperação e de sistemas agênticos, enquanto os Capítulos 7 e 9 focam no cálculo do uso de memória, da latência e dos custos de um modelo. A verificação da qualidade dos dados é tratada no Capítulo 8, e o uso do retorno do usuário para avaliar aplicações em produção, no Capítulo 10.
 
-With that, let's move onto the actual model adaptation process, starting with a topic that many people associate with AI engineering: prompt engineering.
+Com isso, vamos ao processo de adaptação de modelos propriamente dito, começando por um tema que muita gente associa à engenharia de IA: a engenharia de prompt.
 
-## Chapter 5. Prompt Engineering
+## Capítulo 5. Engenharia de prompt
 <center><img src="assets/prompt-anatomy.png" width="600"><br>
-<i>Figure 5-1. A simple example to show to anatomy of a prompt.</i>
+<i>Figura 5-1. Um exemplo simples que mostra a anatomia de um prompt.</i>
 </center>
 <br>
 
-Foundation models can do many things, but you must tell them exactly what you want. The process of crafting an instruction to get a model to do what you want is called prompt engineering. How much crafting is needed depends on how sensitive the model is to prompts. If a small change can cause a big change in the model's response, more crafting will be necessary.
+Modelos de fundação fazem muitas coisas, mas você precisa dizer exatamente o que quer. O processo de elaborar uma instrução para que o modelo faça o que você quer chama-se engenharia de prompt. Quanta elaboração é necessária depende de quão sensível o modelo é a prompts. Se uma pequena mudança provoca uma grande mudança na resposta do modelo, mais elaboração será necessária.
 
-You can think of prompt engineering as human–AI communication. Anyone can communicate, but not everyone can communicate well. Prompt engineering is easy to get started, which misleads many into thinking that it's easy to do it well.
+Você pode pensar na engenharia de prompt como comunicação entre humano e IA. Qualquer um se comunica, mas nem todos se comunicam bem. Engenharia de prompt é fácil de começar, o que leva muita gente a achar, erroneamente, que também é fácil fazê-la bem.
 
-The first part of this chapter discusses the anatomy of a prompt, why in-context learning works, and best prompt engineering practices. Whether you're communicating with AI or other humans, clear instructions with examples and relevant information are essential. Simple tricks like asking the model to slow down and think step by step can yield surprising improvements. Just like humans, AI models have their quirks and biases, which need to be considered for a productive relationship with them.
+A primeira parte deste capítulo discute a anatomia de um prompt, por que o aprendizado em contexto funciona e as boas práticas de engenharia de prompt. Seja para se comunicar com uma IA, seja com outras pessoas, instruções claras, com exemplos e informação relevante, são essenciais. Truques simples, como pedir ao modelo que vá devagar e pense passo a passo, rendem melhorias surpreendentes. Como os humanos, os modelos de IA têm suas manias e seus vieses, que precisam ser levados em conta para uma relação produtiva com eles.
 
-Foundation models are useful because they can follow instructions. However, this ability also opens them up to prompt attacks in which bad actors get models to follow malicious instructions. This chapter discusses different attack approaches and potential defenses against them. As security is an ever-evolving cat-and-mouse game, no security measurements will be foolproof. Security risks will remain a significant roadblock for AI adoption in high-stakes environments.
+Modelos de fundação são úteis porque seguem instruções. Essa habilidade, porém, também os expõe a ataques por prompt, em que agentes mal-intencionados fazem os modelos seguirem instruções maliciosas. Este capítulo discute diferentes abordagens de ataque e possíveis defesas contra elas. Como a segurança é um jogo de gato e rato em constante evolução, nenhuma medida será infalível. Os riscos de segurança continuarão sendo um obstáculo relevante à adoção de IA em ambientes de alto risco.
 
-This chapter also discusses techniques to write better instructions to get models to do what you want. However, to accomplish a task, a model needs not just instructions but also relevant context. How to provide a model with relevant information will be discussed in the next chapter.
+Este capítulo também discute técnicas para escrever instruções melhores e conseguir que os modelos façam o que você quer. Contudo, para cumprir uma tarefa, um modelo precisa não só de instruções, mas também de contexto relevante. Como fornecer informação relevante a um modelo é o assunto do próximo capítulo.
 
-## Chapter 6. RAG and Agents
+## Capítulo 6. RAG e agentes
 <center><img src="assets/rag-architecture.png" width="700"><br>
-<i>Figure 6-3. A high-level view of how an embedding-based, or semantic, retriever works.</i>
+<i>Figura 6-3. Visão de alto nível de como funciona um recuperador baseado em incorporações, ou semântico.</i>
 </center>
 <br>
 
-Given the popularity of RAG and the potential of agents, early readers have mentioned that this is the chapter they're most excited about.
+Dada a popularidade do RAG e o potencial dos agentes, os leitores iniciais disseram que este é o capítulo que mais os empolga.
 
-This chapter started with RAG, the pattern that emerged first between the two. Many tasks require extensive background knowledge that often exceeds a model's context window. For example, code copilots might need access to entire codebases, and research assistants may need to analyze multiple books. Originally developed to overcome a model's context limitations, RAG also enables more efficient use of information, improving response quality while reducing costs. From the early days of foundation models, it was clear that the RAG pattern would be immensely valuable for a wide range of applications, and it has since been rapidly adopted across both consumer and enterprise use cases.
+Este capítulo começou pelo RAG, o padrão que surgiu primeiro entre os dois. Muitas tarefas exigem um conhecimento de fundo extenso, que costuma exceder a janela de contexto do modelo. Copilotos de código, por exemplo, podem precisar de acesso a bases de código inteiras, e assistentes de pesquisa podem precisar analisar vários livros. Desenvolvido originalmente para superar as limitações de contexto de um modelo, o RAG também permite um uso mais eficiente da informação, melhorando a qualidade das respostas e reduzindo custos. Desde os primeiros dias dos modelos de fundação, ficou claro que o padrão RAG seria imensamente valioso para uma ampla gama de aplicações, e desde então ele foi adotado rapidamente tanto em casos de uso de consumo quanto corporativos.
 
-RAG employs a two-step process. It first retrieves relevant information from external memory and then uses this information to generate more accurate responses. The success of a RAG system depends on the quality of its retriever. Term-based retrievers, such as Elasticsearch and BM25, are much lighter to implement and can provide strong baselines. Embedding-based retrievers are more computationally intensive but have the potential to outperform term-based algorithms.
+O RAG emprega um processo de dois passos. Primeiro recupera informação relevante de uma memória externa e depois usa essa informação para gerar respostas mais precisas. O sucesso de um sistema RAG depende da qualidade do seu recuperador. Recuperadores baseados em termos, como Elasticsearch e BM25, são muito mais leves de implementar e oferecem linhas de base fortes. Recuperadores baseados em incorporações exigem mais computação, mas têm o potencial de superar os algoritmos baseados em termos.
 
-Embedding-based retrieval is powered by vector search, which is also the backbone of many core internet applications such as search and recommender systems. Many vector search algorithms developed for these applications can be used for RAG.
+A recuperação baseada em incorporações é movida pela busca vetorial, que também é a espinha dorsal de muitas aplicações centrais da internet, como busca e sistemas de recomendação. Muitos algoritmos de busca vetorial desenvolvidos para essas aplicações podem ser usados em RAG.
 
-The RAG pattern can be seen as a special case of agent where the retriever is a tool the model can use. Both patterns allow a model to circumvent its context limitation and stay more up-to-date, but the agentic pattern can do even more than that. An agent is defined by its environment and the tools it can access. In an AI-powered agent, AI is the planner that analyzes its given task, considers different solutions, and picks the most promising one. A complex task can require many steps to solve, which requires a powerful model to plan. A model's ability to plan can be augmented with reflection and a memory system to help it keep track of its progress.
+O padrão RAG pode ser visto como um caso particular de agente, em que o recuperador é uma ferramenta que o modelo pode usar. Os dois padrões permitem que um modelo contorne sua limitação de contexto e se mantenha mais atualizado, mas o padrão agêntico faz ainda mais do que isso. Um agente é definido pelo seu ambiente e pelas ferramentas a que tem acesso. Em um agente movido a IA, a IA é o planejador que analisa a tarefa dada, considera diferentes soluções e escolhe a mais promissora. Uma tarefa complexa pode exigir muitos passos para ser resolvida, o que requer um modelo poderoso para planejar. A capacidade de planejamento de um modelo pode ser ampliada com reflexão e com um sistema de memória que o ajude a acompanhar seu progresso.
 
-The more tools you give a model, the more capabilities the model has, enabling it to solve more challenging tasks. However, the more automated the agent becomes, the more catastrophic its failures. Tool use exposes agents to many security risks discussed in the Chapter 5. For agents to work in the real world, rigorous defensive mechanisms need to be put in place.
+Quanto mais ferramentas você dá a um modelo, mais capacidades ele tem, o que lhe permite resolver tarefas mais difíceis. Porém, quanto mais automatizado o agente fica, mais catastróficas são suas falhas. O uso de ferramentas expõe os agentes a muitos dos riscos de segurança discutidos no Capítulo 5. Para que agentes funcionem no mundo real, é preciso implantar mecanismos de defesa rigorosos.
 
-Both RAG and agents work with a lot of information, which often exceeds the maximum context length of the underlying model. This necessitates the introduction of a memory system for managing and using all the information a model has. This chapter ended with a short discussion on what this component looks like.
+Tanto o RAG quanto os agentes lidam com muita informação, que frequentemente excede o comprimento máximo de contexto do modelo subjacente. Isso exige a introdução de um sistema de memória para gerenciar e usar toda a informação que um modelo tem. O capítulo terminou com uma breve discussão sobre como é esse componente.
 
-RAG and agents are both prompt-based methods, as they influence the model's quality solely through inputs without modifying the model itself. While they can enable many incredible applications, modifying the underlying model can open up even more possibilities. How to do so will be the topic of the next chapter.
+RAG e agentes são métodos baseados em prompt, pois influenciam a qualidade do modelo apenas por meio das entradas, sem modificar o modelo em si. Embora viabilizem muitas aplicações incríveis, modificar o modelo subjacente abre ainda mais possibilidades. Como fazer isso é o tema do próximo capítulo.
 
-## Chapter 7. Finetuning
+## Capítulo 7. Ajuste fino
 <center><img src="assets/rag-vs-finetune.png" width="700"><br>
-<i>Figure 7-3. Example application development flows. After simple retrieval (such as term-based retrieval), whether to experiment with more complex retrieval (such as hybrid search) or finetuning depends on each application and its failure modes.</i>
+<i>Figura 7-3. Exemplos de fluxos de desenvolvimento de aplicações. Depois da recuperação simples (como a recuperação baseada em termos), experimentar uma recuperação mais complexa (como a busca híbrida) ou o ajuste fino depende de cada aplicação e de seus modos de falha.</i>
 </center>
 <br>
 
-Outside of the evaluation chapters, finetuning has been the most challenging chapter to write. It touched on a wide range of concepts, both old (transfer learning) and new (PEFT), fundamental (low-rank factorization) and experimental (model merging), mathematical (memory calculation) and tactical (hyperparameter tuning). Arranging all these different aspects into a coherent structure while keeping them accessible was difficult.
+Fora os capítulos de avaliação, o de ajuste fino foi o mais difícil de escrever. Ele toca em uma ampla gama de conceitos, antigos (aprendizado por transferência) e novos (PEFT), fundamentais (fatoração de posto baixo) e experimentais (fusão de modelos), matemáticos (cálculo de memória) e táticos (ajuste de hiperparâmetros). Organizar todos esses aspectos em uma estrutura coerente e ao mesmo tempo acessível foi difícil.
 
-The process of finetuning itself isn't hard. Many finetuning frameworks handle the training process for you. These frameworks can even suggest common finetuning methods with sensible default hyperparameters.
+O processo de ajuste fino em si não é difícil. Muitos frameworks de ajuste fino cuidam do treinamento por você. Eles chegam a sugerir métodos comuns de ajuste fino com hiperparâmetros padrão sensatos.
 
-However, the context surrounding finetuning is complex. It starts with whether you should even finetune a model. This chapter started with the reasons for finetuning and the reasons for not finetuning. It also discussed one question that I have been asked many times: when to finetune and when to do RAG.
+O contexto ao redor do ajuste fino, porém, é complexo. Começa por saber se você deveria mesmo ajustar um modelo. Este capítulo começou com as razões para fazer ajuste fino e as razões para não fazer. Também discutiu uma pergunta que já me fizeram muitas vezes: quando fazer ajuste fino e quando fazer RAG.
 
-In its early days, finetuning was similar to pre-training—both involved updating the model's entire weights. However, as models increased in size, full finetuning became impractical for most practitioners. The more parameters to update during finetuning, the more memory finetuning needs. Most practitioners don't have access to sufficient resources (hardware, time, and data) to do full finetuning with foundation models.
+Em seus primeiros dias, o ajuste fino era parecido com o pré-treinamento: ambos envolviam atualizar todos os pesos do modelo. À medida que os modelos cresceram, porém, o ajuste fino completo tornou-se impraticável para a maioria dos praticantes. Quanto mais parâmetros a atualizar durante o ajuste fino, mais memória ele consome. A maioria dos praticantes não tem acesso a recursos suficientes (hardware, tempo e dados) para fazer ajuste fino completo com modelos de fundação.
 
-Many finetuning techniques have been developed with the same motivation: to achieve strong performance on a minimal memory footprint. For example, PEFT reduces finetuning's memory requirements by reducing the number of trainable parameters. Quantized training, on the other hand, mitigates this memory bottleneck by reducing the number of bits needed to represent each value.
+Muitas técnicas de ajuste fino foram desenvolvidas com a mesma motivação: alcançar bom desempenho com o mínimo de memória. O PEFT, por exemplo, reduz os requisitos de memória do ajuste fino ao reduzir o número de parâmetros treináveis. O treinamento quantizado, por sua vez, mitiga esse gargalo de memória reduzindo o número de bits necessários para representar cada valor.
 
-After giving an overview of PEFT, the chapter zoomed into LoRA—why it works and how it works. LoRA has many properties that make it popular among practitioners. On top of being parameter-efficient and data-efficient, it's also modular, making it much easier to serve and combine multiple LoRA models.
+Depois de dar uma visão geral do PEFT, o capítulo aproximou o foco no LoRA: por que ele funciona e como funciona. O LoRA tem muitas propriedades que o tornam popular entre os praticantes. Além de ser eficiente em parâmetros e em dados, ele é modular, o que torna muito mais fácil servir e combinar vários modelos LoRA.
 
-The idea of combining finetuned models brought the chapter to model merging, whose goal is to combine multiple models into one model that works better than these models separately. This chapter discussed the many use cases of model merging, from on-device deployment to model upscaling, and general approaches to model merging.
+A ideia de combinar modelos ajustados levou o capítulo à fusão de modelos, cujo objetivo é combinar vários modelos em um só, que funcione melhor do que eles separadamente. Este capítulo discutiu os muitos casos de uso da fusão de modelos, da implantação em dispositivo ao aumento de escala de modelos, e as abordagens gerais para fundi-los.
 
-A comment I often hear from practitioners is that finetuning is easy, but getting data for finetuning is hard. Obtaining high-quality annotated data, especially instruction data, is challenging. The next chapter will dive into these challenges.
+Um comentário que ouço com frequência dos praticantes é que o ajuste fino é fácil, mas conseguir dados para ele é difícil. Obter dados anotados de alta qualidade, sobretudo dados de instrução, é desafiador. O próximo capítulo mergulha nesses desafios.
 
-## Chapter 8. Dataset Engineering
+## Capítulo 8. Engenharia de conjuntos de dados
 <center><img src="assets/model-perf-dataset.png" width="600"><br>
-<i>Figure 8-3. The performance gain curve with different dataset sizes can help you esti‐ mate the impact of additional training examples on your model’s performance.</i>
+<i>Figura 8-3. A curva de ganho de desempenho com diferentes tamanhos de conjunto de dados ajuda a estimar o impacto de exemplos de treinamento adicionais no desempenho do seu modelo.</i>
 </center>
 <br>
 
-Even though the actual process of creating training data is incredibly intricate, the principles of creating a dataset are surprisingly straightforward. To build a dataset to train a model, you start by thinking through the behaviors you want your model to learn and then design a dataset to show these behaviors. Due to the importance of data, teams are introducing dedicated data roles responsible for acquiring appropriate datasets while ensuring privacy and compliance.
+Ainda que o processo real de criar dados de treinamento seja incrivelmente intrincado, os princípios de criar um conjunto de dados são surpreendentemente diretos. Para construir um conjunto de dados que treine um modelo, você começa pensando nos comportamentos que quer que o modelo aprenda e então projeta um conjunto de dados que mostre esses comportamentos. Dada a importância dos dados, os times vêm criando papéis dedicados a dados, responsáveis por obter os conjuntos apropriados garantindo privacidade e conformidade.
 
-What data you need depends not only on your use case but also on the training phase. Pre-training requires different data from instruction finetuning and preferred finetuning. However, dataset design across training phases shares the same three core criteria: quality, coverage, and quantity.
+Os dados de que você precisa dependem não só do seu caso de uso, mas também da fase de treinamento. O pré-treinamento exige dados diferentes dos exigidos pelo ajuste fino por instrução e pelo ajuste fino por preferência. No entanto, o projeto do conjunto de dados em todas as fases compartilha os mesmos três critérios centrais: qualidade, cobertura e quantidade.
 
-While how much data a model is trained on is what has been grabbing headlines, having high-quality data with sufficient coverage is just as important. A small amount of high-quality data can outperform a large amount of noisy data. Similarly, many teams have found that increasing the diversity of their datasets is a key to improving their models' performance.
+Embora a quantidade de dados com que um modelo é treinado seja o que ganha as manchetes, ter dados de alta qualidade com cobertura suficiente é igualmente importante. Uma pequena quantidade de dados de alta qualidade supera uma grande quantidade de dados ruidosos. Do mesmo modo, muitos times descobriram que aumentar a diversidade dos seus conjuntos de dados é uma chave para melhorar o desempenho dos seus modelos.
 
-Due to the challenge of acquiring high-quality data, many teams have turned to synthetic data. While generating data programmatically has long been a goal, it wasn't until AI could create realistic, complex data that synthetic data became a practical solution for many more use cases. This chapter discussed different techniques for data synthesis with a deep dive into synthesizing instruction data for finetuning.
+Diante da dificuldade de obter dados de alta qualidade, muitos times recorreram a dados sintéticos. Gerar dados programaticamente é um objetivo antigo, mas só quando a IA passou a criar dados realistas e complexos os dados sintéticos se tornaram uma solução prática para muito mais casos de uso. Este capítulo discutiu diferentes técnicas de síntese de dados, com um mergulho na síntese de dados de instrução para ajuste fino.
 
-Just like real data, synthetic data must be evaluated to ensure its quality before being used to train models. Evaluating AI-generated data is just as tricky as evaluating other AI outputs, and people are more likely to use generated data that they can reliably evaluate.
+Assim como os dados reais, os dados sintéticos precisam ser avaliados para garantir sua qualidade antes de treinar modelos. Avaliar dados gerados por IA é tão complicado quanto avaliar outras saídas de IA, e as pessoas tendem mais a usar dados gerados que conseguem avaliar de forma confiável.
 
-Data is hard because many steps in dataset creation aren't easily automatable. It's hard to annotate data, but it's even harder to create annotation guidelines. It's hard to automate data generation, but it's even harder to automate verifying it. While data synthesis helps generate more data, you can't automate thinking through what data you want. You can't easily automate annotation guidelines. You can't automate paying attention to details.
+Dados são difíceis porque muitos passos da criação de um conjunto de dados não são facilmente automatizáveis. É difícil anotar dados, mas é ainda mais difícil criar diretrizes de anotação. É difícil automatizar a geração de dados, mas é ainda mais difícil automatizar a verificação. A síntese ajuda a gerar mais dados, mas você não automatiza pensar em quais dados quer. Não dá para automatizar facilmente as diretrizes de anotação. Não dá para automatizar prestar atenção aos detalhes.
 
-Challenging problems lead to creative solutions. One thing that stood out to me when doing research for this chapter is how much creativity is involved in dataset design. There are so many ways people construct and evaluate data. I hope that the range of data synthesis and verification techniques discussed in this chapter will give you inspiration for how to design your dataset.
+Problemas difíceis levam a soluções criativas. Algo que me chamou a atenção ao pesquisar para este capítulo foi quanta criatividade há no projeto de conjuntos de dados. Existem tantas maneiras de as pessoas construírem e avaliarem dados. Espero que a variedade de técnicas de síntese e de verificação discutidas aqui inspire você a projetar o seu conjunto de dados.
 
-Let's say that you've curated a wonderful dataset that allows you to train an amazing model, how should you serve this model? The next chapter will discuss how to optimize inference for latency and cost.
+Digamos que você tenha feito a curadoria de um conjunto de dados maravilhoso, que permite treinar um modelo incrível: como servir esse modelo? O próximo capítulo discute como otimizar a inferência para latência e custo.
 
-## Chapter 9. Inference Optimization
+## Capítulo 9. Otimização de inferência
 <center><img src="assets/inference-service.png" width="500"><br>
-<i>Figure 9-1. A simple inference service.</i>
+<i>Figura 9-1. Um serviço de inferência simples.</i>
 </center>
 <br>
 
-A model's usability depends heavily on its inference cost and latency. Cheaper inference makes AI-powered decisions more affordable, while faster inference enables the integration of AI into more applications. Given the massive potential impact of inference optimization, it has attracted a remarkable number of talented individuals who continually come up with innovative approaches.
+A utilidade de um modelo depende muito do seu custo e da sua latência de inferência. Uma inferência mais barata torna decisões movidas a IA mais acessíveis, enquanto uma inferência mais rápida permite integrar IA a mais aplicações. Dado o enorme impacto potencial da otimização de inferência, ela atraiu um número notável de pessoas talentosas, que não param de propor abordagens inovadoras.
 
-Before we start making things more efficient, it's necessary to understand how efficiency is measured. This chapter started with common efficiency metrics for latency, throughput, and utilization. For language model-based inference, latency can be broken into **time to first token** (TTFT), which is influenced by the prefilling phase, and **time per output token** (TPOT), which is influenced by the decoding phase. Throughput metrics are directly related to cost. There's a tradeoff between latency and throughput. You can potentially reduce cost if you're okay with increased latency, and reducing latency often involves increasing cost.
+Antes de começar a tornar as coisas mais eficientes, é preciso entender como a eficiência é medida. Este capítulo começou com as métricas comuns de latência, vazão e utilização. Para inferência baseada em modelos de linguagem, a latência pode ser separada em **tempo até o primeiro token** (TTFT), influenciado pela fase de preenchimento prévio, e **tempo por token de saída** (TPOT), influenciado pela fase de decodificação. As métricas de vazão estão diretamente relacionadas ao custo. Existe um compromisso entre latência e vazão. Você pode reduzir o custo se aceitar mais latência, e reduzir a latência costuma implicar aumentar o custo.
 
-How efficiently a model can run depends on the hardware it is run on. For this reason, this chapter also provided a quick overview of AI hardware and what it takes to optimize models on different accelerators.
+A eficiência com que um modelo roda depende do hardware em que ele é executado. Por isso, este capítulo também deu uma visão geral rápida do hardware de IA e do que é preciso para otimizar modelos em diferentes aceleradores.
 
-This chapter then continued with different techniques for inference optimization. Given the availability of model APIs, most application developers will use these APIs with their built-in optimization instead of implementing these techniques themselves. While these techniques might not be relevant to all application developers, I believe that understanding what techniques are possible can be helpful for evaluating the efficiency of model APIs.
+O capítulo seguiu então com diferentes técnicas de otimização de inferência. Dada a disponibilidade de APIs de modelos, a maioria de quem desenvolve aplicações vai usar essas APIs com suas otimizações embutidas, em vez de implementar as técnicas por conta própria. Ainda que essas técnicas não sejam relevantes para todos, acredito que entender quais técnicas são possíveis ajuda a avaliar a eficiência das APIs de modelos.
 
-In this chapter, I focused on optimization at the model level and the inference service level. Model-level optimization often requires changing the model itself, which can lead to changes in the model behaviors. Inference service-level optimization, on the other hand, typically keeps the model intact and only changes how it's served.
+Neste capítulo, foquei na otimização no nível do modelo e no nível do serviço de inferência. A otimização no nível do modelo costuma exigir mudar o próprio modelo, o que pode alterar seus comportamentos. Já a otimização no nível do serviço de inferência normalmente mantém o modelo intacto e muda apenas como ele é servido.
 
-Model-level techniques include model-agnostic techniques like quantization and distillation. Different model architectures require their own optimization. For example, because a key bottleneck of transformer models is in the attention mechanism, many optimization techniques involve making attention more efficient, including KV cache management and writing attention kernels. A big bottleneck for an autoregressive language model is in its autoregressive decoding process, and consequently, many techniques have been developed to address it, too.
+As técnicas no nível do modelo incluem técnicas agnósticas de modelo, como quantização e destilação. Arquiteturas diferentes exigem suas próprias otimizações. Como um gargalo central dos modelos transformer está no mecanismo de atenção, por exemplo, muitas técnicas de otimização envolvem tornar a atenção mais eficiente, incluindo o gerenciamento do KV cache e a escrita de kernels de atenção. Um grande gargalo de um modelo de linguagem autorregressivo está no seu processo de decodificação autorregressiva e, por consequência, muitas técnicas também foram desenvolvidas para atacá-lo.
 
-Inference service-level techniques include various batching and parallelism strategies. There are also techniques developed especially for autoregressive language models, including prefilling/decoding decoupling and prompt caching.
+As técnicas no nível do serviço de inferência incluem várias estratégias de agrupamento em lote e de paralelismo. Há também técnicas desenvolvidas especialmente para modelos de linguagem autorregressivos, entre elas o desacoplamento entre preenchimento prévio e decodificação e o cache de prompts.
 
-The choice of optimization techniques depends on your workloads. For example, KV caching is significantly more important for workloads with long contexts than those with short contexts. Prompt caching, on the other hand, is crucial for workloads involving long, overlapping prompt segments or multi-turn conversations. The choice also depends on your performance requirements. For instance, if low latency is a higher priority than cost, you might want to scale up replica parallelism. While more replicas require additional machines, each machine handles fewer requests, allowing it to allocate more resources per request and, thus, improve response time.
+A escolha das técnicas de otimização depende das suas cargas de trabalho. O KV cache, por exemplo, é bem mais importante para cargas com contextos longos do que para cargas com contextos curtos. Já o cache de prompts é crucial para cargas que envolvem segmentos de prompt longos e sobrepostos ou conversas de múltiplos turnos. A escolha também depende dos seus requisitos de desempenho. Se latência baixa tem prioridade maior que custo, por exemplo, você pode querer escalar o paralelismo de réplicas. Mais réplicas exigem mais máquinas, mas cada máquina atende menos requisições, o que lhe permite alocar mais recursos por requisição e, assim, melhorar o tempo de resposta.
 
-However, across various use cases, the most impactful techniques are typically quantization (which generally works well across models), tensor parallelism (which both reduces latency and enables serving larger models), replica parallelism (which is relatively straightforward to implement), and attention mechanism optimization (which can significantly accelerate transformer models).
+Ainda assim, entre os diversos casos de uso, as técnicas mais impactantes costumam ser a quantização (que em geral funciona bem em vários modelos), o paralelismo de tensores (que reduz a latência e permite servir modelos maiores), o paralelismo de réplicas (relativamente simples de implementar) e a otimização do mecanismo de atenção (que acelera bastante os modelos transformer).
 
-Inference optimization concludes the list of model adaptation techniques covered in this book. The next chapter will explore how to integrate these techniques into a cohesive system.
+A otimização de inferência encerra a lista de técnicas de adaptação de modelos cobertas neste livro. O próximo capítulo explora como integrar essas técnicas em um sistema coeso.
 
-## Chapter 10. AI Engineering Architecture and User Feedback
+## Capítulo 10. Arquitetura de engenharia de IA e retorno do usuário
 <center><img src="assets/aie-architecture.png" width="800"><br>
-<i>Figure 10-10. A common generative AI application architecture.</i>
+<i>Figura 10-10. Uma arquitetura comum de aplicação de IA generativa.</i>
 </center>
 <br>
-If each previous chapter focused on a specific aspect of AI engineering, this chapter looked into the process of building applications on top of foundation models as a whole.
+Se cada capítulo anterior focou em um aspecto específico da engenharia de IA, este olhou para o processo de construir aplicações sobre modelos de fundação como um todo.
 
-The chapter consisted of two parts. The first part discussed a common architecture for AI applications. While the exact architecture for an application might vary, this high-level architecture provides a framework for understanding how different components fit together. I used the step-by-step approach in building this architecture to discuss the challenges at each step and what techniques you can use to address them.
+O capítulo teve duas partes. A primeira discutiu uma arquitetura comum para aplicações de IA. Embora a arquitetura exata de uma aplicação possa variar, essa arquitetura de alto nível oferece um arcabouço para entender como os diferentes componentes se encaixam. Usei a abordagem passo a passo na construção dessa arquitetura para discutir os desafios de cada etapa e as técnicas que você pode usar para enfrentá-los.
 
-While it's necessary to separate components to keep your system modular and maintainable, this separation is fluid. There are many ways in which components can overlap in functionalities. For example, guardrails can be implemented in the inference service, the model gateway, or as a standalone component.
+Embora seja necessário separar componentes para manter seu sistema modular e sustentável, essa separação é fluida. Há muitas maneiras pelas quais os componentes podem se sobrepor em funcionalidades. Salvaguardas, por exemplo, podem ser implementadas no serviço de inferência, no gateway de modelos ou como componente autônomo.
 
-Each additional component can potentially make your system more capable, safer, or faster, but will also increase the system's complexity, exposing it to new failure modes. One integral part of any complex system is monitoring and observability. Observability involves understanding how your system fails, designing metrics and alerts around failures, and ensuring that your system is designed in a way that makes these failures detectable and traceable. While many observability best practices and tools from software engineering and traditional machine learning are applicable to AI engineering applications, foundation models introduce new failure modes, which require additional metrics and design considerations.
+Cada componente adicional pode tornar seu sistema mais capaz, mais seguro ou mais rápido, mas também aumenta a complexidade do sistema e o expõe a novos modos de falha. Uma parte integral de qualquer sistema complexo é o monitoramento e a observabilidade. Observabilidade envolve entender como seu sistema falha, projetar métricas e alertas em torno das falhas e garantir que o sistema seja projetado de forma a tornar essas falhas detectáveis e rastreáveis. Embora muitas boas práticas e ferramentas de observabilidade vindas da engenharia de software e do aprendizado de máquina tradicional se apliquem a aplicações de engenharia de IA, os modelos de fundação introduzem novos modos de falha, que exigem métricas e considerações de projeto adicionais.
 
-At the same time, the conversational interface enables new types of user feedback, which you can leverage for analytics, product improvement, and the data flywheel. The second part of the chapter discussed various forms of conversational feedback and how to design your application to effectively collect it.
+Ao mesmo tempo, a interface conversacional viabiliza novos tipos de retorno do usuário, que você pode aproveitar para análises, melhoria do produto e o volante de dados. A segunda parte do capítulo discutiu várias formas de retorno conversacional e como projetar sua aplicação para coletá-lo de forma eficaz.
 
-Traditionally, user feedback design has been seen as a product responsibility rather than an engineering one, and as a result, it is often overlooked by engineers. However, since user feedback is a crucial source of data for continuously improving AI models, more AI engineers are now becoming involved in the process to ensure they receive the data they need. This reinforces the idea from Chapter 1 that, compared to traditional ML engineering, AI engineering is moving closer to product. This is because of both the increasing importance of data flywheel and product experience as competitive advantages.
+Tradicionalmente, o design do retorno do usuário é visto como responsabilidade de produto, e não de engenharia, e por isso costuma ser negligenciado pelos engenheiros. Contudo, como o retorno do usuário é uma fonte crucial de dados para melhorar continuamente os modelos de IA, cada vez mais engenheiros de IA se envolvem no processo para garantir que recebam os dados de que precisam. Isso reforça a ideia do Capítulo 1 de que, em comparação com a engenharia de ML tradicional, a engenharia de IA está mais perto do produto. Isso se deve tanto à importância crescente do volante de dados quanto à experiência de produto como vantagens competitivas.
 
-Many AI challenges are, at their core, system problems. To solve them, it's often necessary to step back and consider the system as a whole. A single problem might be addressed by different components working independently, or a solution could require the collaboration of multiple components. A thorough understanding of the system is essential to solving real problems, unlocking new possibilities, and ensuring safety.
+Muitos desafios de IA são, no fundo, problemas de sistema. Para resolvê-los, muitas vezes é preciso dar um passo atrás e considerar o sistema como um todo. Um único problema pode ser tratado por diferentes componentes trabalhando de forma independente, ou uma solução pode exigir a colaboração de vários componentes. Um entendimento completo do sistema é essencial para resolver problemas reais, destravar novas possibilidades e garantir a segurança.
